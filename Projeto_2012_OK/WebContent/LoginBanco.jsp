@@ -41,7 +41,7 @@ try{
 	{
 		String loginok = rs.getString("login");
 		String senh = rs.getString("senha");
-		javax.swing.JOptionPane.showMessageDialog(null,"Login Efetuado com sucesso!!");
+		javax.swing.JOptionPane.showMessageDialog(null,"Login Efetuado com sucesso!!!");
 		
 		response.sendRedirect("Menu_Principal.jsp?user="+loginok+"&agencia="+agencia);
 		
