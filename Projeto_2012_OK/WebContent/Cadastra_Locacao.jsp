@@ -11,7 +11,7 @@
 	String agencia = request.getParameter("agencia");
 	String data = (new java.text.SimpleDateFormat("dd/MM/yyyy").format(new java.util.Date()));
 	String hora = (new java.text.SimpleDateFormat("HH:mm").format(new java.util.Date()));
-	String registro = ""+((int) (1 + (Math.random() * 100)));
+	String registro = ""+((int) (1 + (Math.random() * 10000)));
 %>    
     
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -55,9 +55,13 @@
 	</table></center>
 	
 	<br><br>
-	<face="arial" size="16"><th><center>Dados Complementares</center></th>
-	
 	<center><table border=0>
+	<tr>
+	<td></td>
+	<td><face="arial" size="16"><th><center>Dados Complementares</center></th></td>
+	<td></td>
+	</tr>
+	<tr></tr>
 	<tr>
 		<td><face="arial" size="12"><center>Data Empréstimo</td>
 		<td><face="arial" size="12"><center>Hora Empréstimo</td>
@@ -81,6 +85,7 @@
 	<td>Devolução Prevista</td>
 	<td></td>
 	</tr>
+	<tr></tr>
 	<tr>
 		<td><face="arial" size="12"><center>Data</td>
 		<td><face="arial" size="12"><center>Hora</td>
@@ -99,7 +104,7 @@
 	<br></center>
 	<face="arial" size="12">Número de Registro</> <INPUT TYPE="text" NAME="Registro" VALUE="<%=registro %>" disabled>
 	<INPUT TYPE="submit" VALUE= "OK">
-	<input type='button' onclick='javascript:history.back()' value='Cancelar' name='Cancelar'>
+	<input type='button' onclick='javascript:history.back()' value='Voltar' name='Voltar'>
 	
 	</form>		
 </body>

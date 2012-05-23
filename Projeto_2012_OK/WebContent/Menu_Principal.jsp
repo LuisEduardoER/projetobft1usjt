@@ -67,7 +67,7 @@
           </li>
           <li><a class="MenuBarItemSubmenu" href="#"><center>Locacao</center></a>
             <ul>
-              <li><a href="#">Cadastrar</a></li>
+              <li><a href="Cadastra_Locacao.jsp?user=<%= user %>&agencia=<%=agencia%>">Cadastrar</a></li>
               <li><a href="#">Consultar</a></li>
               <li><a href="#">Finalizar</a></li>
             </ul>
