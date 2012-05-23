@@ -46,7 +46,7 @@
 			stm.executeUpdate(sql3);
 			
 			String sql4 = "insert into cliente (cpf,passaporte,cnpj,telefone,email) values ('"+nada+"','"+nada+"','"+cnpj+"','"+fone+"','"+email+"')";
-			String sql5 = "insert into cliente_pj (cnpj,nomefant,razaosoci,inscriest) values ('"+cnpj+"','"+nome+"','"+razao+"','"+inscri+"')";
+			String sql5 = "insert into cliente_pj (cnpj,nomefant,razaosoci,inscriest,loc) values ('"+cnpj+"','"+nome+"','"+razao+"','"+inscri+"','Não')";
 			String sql6 = "insert into cl_condutor (cnpj,nomecond,rgcond,cpfcond,habilitacaocond,categoriacond,estadoemiscond,dataemiscond,validadecond) values ('"+cnpj+"','"+nomecond+"','"+rg+"','"+cpf+"','"+cnh+"','"+catcnh+"','"+estadocnh+"','"+emiscnh+"','"+valcnh+"')";
 			stm.executeUpdate(sql4);
 			stm.executeUpdate(sql5);	

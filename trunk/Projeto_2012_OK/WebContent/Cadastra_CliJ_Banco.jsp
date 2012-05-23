@@ -36,7 +36,7 @@
 			"postgre");									//senha
 		
 			String sql1 = "insert into cliente (cpf,passaporte,cnpj,telefone,email) values ('"+nada+"','"+nada+"','"+cnpj+"','"+fone+"','"+email+"')";
-			String sql2 = "insert into cliente_pj (cnpj,nomefant,razaosoci,inscriest) values ('"+cnpj+"','"+nome+"','"+razao+"','"+inscri+"')";
+			String sql2 = "insert into cliente_pj (cnpj,nomefant,razaosoci,inscriest,loc) values ('"+cnpj+"','"+nome+"','"+razao+"','"+inscri+"','Não')";
 			String sql3 = "insert into cl_condutor (cnpj,nomecond,rgcond,cpfcond,habilitacaocond,categoriacond,estadoemiscond,dataemiscond,validadecond) values ('"+cnpj+"','"+nomecond+"','"+rg+"','"+cpf+"','"+cnh+"','"+catcnh+"','"+estadocnh+"','"+emiscnh+"','"+valcnh+"')";
 			Statement stm = connection.createStatement();
 			stm = connection.createStatement();

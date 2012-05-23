@@ -40,7 +40,7 @@
 		if(estrangeiro.equals("Sim"))
 		{
 			String sql1 = "insert into cliente (cpf,passaporte,cnpj,telefone,email) values ('"+nada+"','"+pass+"','"+nada+"','"+fone+"','"+email+"')";
-			String sql2 = "insert into cliente_es (passaporte,habilitacao,categoriacnh,estemiscnh,dataemiscnh,validadecnh,datanasc,sexo,nome) values ('"+pass+"','"+cnh+"','"+catcnh+"','"+estadocnh+"','"+emiscnh+"','"+valcnh+"','"+datanasc+"','"+sexo+"','"+nome+"')";
+			String sql2 = "insert into cliente_es (passaporte,habilitacao,categoriacnh,estemiscnh,dataemiscnh,validadecnh,datanasc,sexo,nome,loc) values ('"+pass+"','"+cnh+"','"+catcnh+"','"+estadocnh+"','"+emiscnh+"','"+valcnh+"','"+datanasc+"','"+sexo+"','"+nome+"','Não')";
 			stm = connection.createStatement();
 			stm.executeUpdate(sql1);
 			stm.executeUpdate(sql2);
@@ -48,7 +48,7 @@
 		else if(estrangeiro.equals("Não"))
 		{
 			String sql1 = "insert into cliente (cpf,passaporte,cnpj,telefone,email) values ('"+cpf+"','"+nada+"','"+nada+"','"+fone+"','"+email+"')";
-			String sql2 = "insert into cliente_pf (cpf,rg,habilitacao,categoriacnh,estemiscnh,dataemiscnh,validadecnh,datanasc,sexo,nome) values ('"+cpf+"','"+rg+"','"+cnh+"','"+catcnh+"','"+estadocnh+"','"+emiscnh+"','"+valcnh+"','"+datanasc+"','"+sexo+"','"+nome+"')";
+			String sql2 = "insert into cliente_pf (cpf,rg,habilitacao,categoriacnh,estemiscnh,dataemiscnh,validadecnh,datanasc,sexo,nome,loc) values ('"+cpf+"','"+rg+"','"+cnh+"','"+catcnh+"','"+estadocnh+"','"+emiscnh+"','"+valcnh+"','"+datanasc+"','"+sexo+"','"+nome+"','Não')";
 			stm = connection.createStatement();
 			stm.executeUpdate(sql1);
 			stm.executeUpdate(sql2);
