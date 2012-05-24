@@ -22,7 +22,7 @@
 </head>
 <body text="#000000">
 
-<form name="form1" id="form1" action = "Cadastra_CliF_Banco.jsp?user=<%= user%>&agencia=<%=agencia%>" method = "post">
+<form name="form1" id="form1" action = "Cadastra_Loc_Banco.jsp?user=<%= user%>&agencia=<%=agencia%>" method = "post">
 
 	<h1><P align="center">Cadastrar Locação</h1></P>
 	<face="arial" size="18"><th><center>Cliente e Veículo</center></th>	
@@ -30,11 +30,26 @@
 	<center><table border=0>
 	<tr>
 		<td><face="arial" size="12"><center>ID do Cliente</center></td>
-		<td><face="arial" size="12"><center>ID do Veículo</center></td>
+		<td><face="arial" size="12"><center>Tipo</center></td>
 	</tr>
 	<tr>
-		<td><center><INPUT TYPE="text" VALUE="">&nbsp&nbsp<img src= "imagens/lupa.png" width=18 height=18></center></td>
-		<td><center><INPUT TYPE="text" VALUE="">&nbsp&nbsp<img src= "imagens/lupa.png" width=18 height=18></center></td>
+		<td><center><INPUT TYPE="text" name="idcli" VALUE="">&nbsp&nbsp<img src= "imagens/lupa.png" width=18 height=18></center></td>
+		<td><center><SELECT NAME="tipocli">
+									<OPTION >PF
+									<OPTION >PJ
+									<OPTION >PE
+									</SELECT></td>
+	</tr>
+	<tr>
+		<td><face="arial" size="12"><center>ID do Veículo</center></td>
+		<td><face="arial" size="12"><center>Tipo</center></td>
+	</tr>
+	<tr>
+		<td><center><INPUT TYPE="text" name="idvei" VALUE="">&nbsp&nbsp<img src= "imagens/lupa.png" width=18 height=18></center></td>
+		<td><center><SELECT NAME="tipokm">
+									<OPTION >KMLivre
+									<OPTION >KMControlado
+									</SELECT></td>
 	</tr>
 	</table>
 	<br>
@@ -42,15 +57,15 @@
 	<tr>
 		<td colspan=2>	
 			<face="arial" size="12"><center>Acessórios:</> 
-			<INPUT TYPE="checkbox" NAME="GPS">Navagador GPS</>
-        	<INPUT TYPE="checkbox" NAME="Cadeira de Bebê">Cadeira de Bebê</>
-			<INPUT TYPE="checkbox" NAME="Motorista">Motorista</>
+			<INPUT TYPE="checkbox" NAME="gps">Navagador GPS</>
+        	<INPUT TYPE="checkbox" NAME="bebe">Cadeira de Bebê</>
+			<INPUT TYPE="checkbox" NAME="motorista">Motorista</>
 		</td>
 	</tr>
 		<td colspan=2>
 			<face="arial" size="12"><center>Tipo de Tarifa:</>
-			<input type="radio" name="KM" value="KM Livre">KM Livre</>
-			<input type="radio" name="KM" value="KM Controlado">KM Controlado</>
+			<input type="radio" name="km" value="kmlivre">KM Livre</>
+			<input type="radio" name="km" value="kmcontrolado">KM Controlado</>
 		</td>
 	</table></center>
 	
@@ -58,7 +73,7 @@
 	<center><table border=0>
 	<tr>
 	<td></td>
-	<td><face="arial" size="16"><th><center>Dados Complementares</center></th></td>
+	<td><face="arial" size="16"><center>Dados Complementares</center></td>
 	<td></td>
 	</tr>
 	<tr></tr>
@@ -68,9 +83,9 @@
 		<td><face="arial" size="12"><center>Local Empréstimo</td>
 	</tr>
 	<tr>
-		<td><INPUT TYPE="text" VALUE="<%=data %>" disabled></td>
-		<td><INPUT TYPE="text" VALUE="<%=hora %>" disabled></td>
-		<td><SELECT NAME="Agencias" disabled>
+		<td><INPUT TYPE="text" name="dataloc" VALUE="<%=data %>"></td>
+		<td><INPUT TYPE="text" name="horaloc" VALUE="<%=hora %>"></td>
+		<td><SELECT NAME="agencialoc">
 					<OPTION >mooca7367
 					<OPTION >florianopolis035
 					<OPTION Selected> <%=agencia %>
@@ -92,9 +107,9 @@
 		<td><face="arial" size="12"><center>Local</td>
 	</tr>
 	<tr>
-		<td><INPUT TYPE="text" VALUE=""></td>
-		<td><INPUT TYPE="text" VALUE=""></td>
-		<td><SELECT NAME="Agencias">
+		<td><INPUT TYPE="text" name="datadev" VALUE=""></td>
+		<td><INPUT TYPE="text" name="horadev" VALUE=""></td>
+		<td><SELECT NAME="agenciadev">
 					<OPTION >mooca7367
 					<OPTION SELECTED>florianopolis035
 					</SELECT></td>
@@ -102,7 +117,7 @@
 	</table>
 	
 	<br></center>
-	<face="arial" size="12">Número de Registro</> <INPUT TYPE="text" NAME="Registro" VALUE="<%=registro %>" disabled>
+	<face="arial" size="12">Número de Registro</> <INPUT TYPE="text" NAME="registro" VALUE="<%=registro %>">
 	<INPUT TYPE="submit" VALUE= "OK">
 	<input type='button' onclick='javascript:history.back()' value='Voltar' name='Voltar'>
 	
