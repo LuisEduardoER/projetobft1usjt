@@ -23,6 +23,8 @@ function pageLoginPt()
 	this.Enviar = "Enviar";
 	this.Limpar = "Limpar";
 	this.Cancelar = "Cancelar";
+	this.message1 = "Login Efetuado com sucesso!!";
+	this.message2 = "Login/Senha Incorretos!!";
 }
 
 function pageLoginChangePt() 
