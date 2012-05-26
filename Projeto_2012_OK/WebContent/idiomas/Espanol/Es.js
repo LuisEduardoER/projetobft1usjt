@@ -17,14 +17,14 @@ function pageEs()
 	this.locvei = "Alquiler de Coches";
 	this.cliente = "Cliente";
 	this.pf = "Persona Fisica";
-	this.pj = "Persona Juridica";
+	this.pj = "Corporativo";
 	this.cadastra = "Registro";
-	this.consulta = "Ver";
-	this.edita = "Editar";
-	this.exclui = "Eliminar";
+	this.consulta = "Consultar";
+	this.edita = "Cambio";
+	this.exclui = "Borrar";
 	this.veiculo = "Vehiculo";
 	this.finaliza = "Final";
-	this.loc = "Arrendamiento";
+	this.loc = "Ubicacion";
 	this.logout = "Salir";
 	this.cadastropf = "Registro de Persona Fisica";
 	this.cadastrobasico = "Registro Basico";
@@ -33,27 +33,26 @@ function pageEs()
 	this.email = "Correo Electronico";
 	
 	this.sexo = "Sexo";
-	this.masculino = "Masculino";
-	this.feminino = "Feminino";
-	this.datnasc = "Data de Nascimento";
-	this.estrangeiro = "Estrangeiro";
-	this.sim = "Sim";
-	this.nao = "Nao";
+	this.masculino = "Hombre";
+	this.feminino = "Mujer";
+	this.datnasc = "Fecha de Nacimiento";
+	this.estrangeiro = "Extranjero";
+	this.sim = "Si";
+	this.nao = "No";
 	this.doc = "Documentos";
 	this.cpf = "CPF";
-	this.pass = "Passaporte";
+	this.pass = "Pasaporte";
 	this.cnh = "CNH";
 	this.catcnh = "Categoria CNH";
-	this.estadocnh = "Estado Emissor";
+	this.estadocnh = "Estado del Emisor";
 	this.rg = "RG";
-	this.emiscnh = "Data de Emissao";
-	this.valcnh = "Validade";
+	this.emiscnh = "Fecha de Emission";
+	this.valcnh = "Fecha de Expiracion";
 	this.limpar = "Limpar";
-	this.voltar = "Voltar";
-	this.consultapf = "Consulta Cliente Pessoa Fisica";
-	this.brasileiro = "Brasileiro";
-	this.estrangeiro = "Estrangeiro";
-	this.message3 = "Cliente não Encontrado!!";
+	this.voltar = "Volver";
+	this.consultapf = "Consulta al Cliente Persona Fisica";
+	this.brasileiro = "Brasileno";
+	this.message3 = "No se encontro al Cliente!!";
 }
 
 function pageChangeEs() 

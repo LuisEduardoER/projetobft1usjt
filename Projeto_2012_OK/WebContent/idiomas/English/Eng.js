@@ -14,12 +14,12 @@ function pageEng()
 	this.message1 = "Login Successfully!!";
 	this.message2 = "Username/Password Incorrect!!";
 	this.bemvin = "Welcome, ";
-	this.locvei = "Rent a Vehicles";
+	this.locvei = "Leasing of Vehicles";
 	this.cliente = "Customer";
 	this.pf = "Physical Person";
 	this.pj = "Juridical Person";
 	this.cadastra = "Register";
-	this.consulta = "See";
+	this.consulta = "Consult";
 	this.edita = "Edit";
 	this.exclui = "Delete";
 	this.veiculo = "Vehicle";
@@ -32,28 +32,28 @@ function pageEng()
 	this.telefone = "Telephone";
 	this.email = "Email";
 	
-	this.sexo = "Sexo";
-	this.masculino = "Masculino";
-	this.feminino = "Feminino";
-	this.datnasc = "Data de Nascimento";
-	this.estrangeiro = "Estrangeiro";
-	this.sim = "Sim";
-	this.nao = "Nao";
-	this.doc = "Documentos";
+	this.sexo = "Sex";
+	this.masculino = "Male";
+	this.feminino = "Female";
+	this.datnasc = "Date of Birth";
+	this.estrangeiro = "Foreign";
+	this.sim = "Yes";
+	this.nao = "No";
+	this.doc = "Documents";
 	this.cpf = "CPF";
-	this.pass = "Passaporte";
+	this.pass = "Passport";
 	this.cnh = "CNH";
-	this.catcnh = "Categoria CNH";
-	this.estadocnh = "Estado Emissor";
+	this.catcnh = "CNH Category";
+	this.estadocnh = "State Issuer";
 	this.rg = "RG";
-	this.emiscnh = "Data de Emissao";
-	this.valcnh = "Validade";
-	this.limpar = "Limpar";
-	this.voltar = "Voltar";
-	this.consultapf = "Consulta Cliente Pessoa Fisica";
-	this.brasileiro = "Brasileiro";
-	this.estrangeiro = "Estrangeiro";
-	this.message3 = "Cliente não Encontrado!!";
+	this.emiscnh = "Date of Issuance";
+	this.valcnh = "Validity";
+	this.limpar = "Clear";
+	this.voltar = "Back";
+	this.consultapf = "Consult Physical Person Customer";
+	this.brasileiro = "Brasilian";
+	this.estrangeiro = "Foreign";
+	this.message3 = "Customer not Found!!";
 }
 
 function pageChangeEn() 
