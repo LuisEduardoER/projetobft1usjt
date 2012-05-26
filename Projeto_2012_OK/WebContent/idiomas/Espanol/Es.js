@@ -1,36 +1,36 @@
 function pageEs()
 {
-	this.selecaoIdioma = "Selecao de Idioma";
-	this.selecionaIdioma = "Selecione o Idioma";
+	this.selecaoIdioma = "Seleccion de Idioma";
+	this.selecionaIdioma = "Seleccionar Idioma";
 	this.btnPortugues = "Portugues";
 	this.btnIngles = "Ingles";
-	this.btnEspanhol = "Espanhol";
+	this.btnEspanhol = "Espanol";
 	this.Enviar = "Enviar";
 	this.Cancelar = "Cancelar";
-	this.login = "Entrar";
+	this.login = "Enter";
 	this.usuario = "Usuario";
-	this.senha = "Senha";
+	this.senha = "Contrasena";
 	this.agencia = "Agencia";
-	this.message1 = "Login Efetuado com sucesso!!";
-	this.message2 = "Login/Senha Incorretos!!";
+	this.message1 = "Ingresado con exito!!";
+	this.message2 = "Nombre de usuario/contrasena incorrecta!!";
 	this.bemvin = "Bienvenido, ";
-	this.locvei = "Locadora de Veiculos";
+	this.locvei = "Alquiler de Coches";
 	this.cliente = "Cliente";
-	this.pf = "Pessoa Fisica";
-	this.pj = "Pessoa Juridica";
-	this.cadastra = "Cadastrar";
-	this.consulta = "Consultar";
+	this.pf = "Persona Fisica";
+	this.pj = "Persona Juridica";
+	this.cadastra = "Registro";
+	this.consulta = "Ver";
 	this.edita = "Editar";
-	this.exclui = "Excluir";
-	this.veiculo = "Veiculo";
-	this.finaliza = "Finalizar";
-	this.loc = "Locacao";
+	this.exclui = "Eliminar";
+	this.veiculo = "Vehiculo";
+	this.finaliza = "Final";
+	this.loc = "Arrendamiento";
 	this.logout = "Salir";
-	this.cadastropf = "Cadastro de Pessoa Fisica";
-	this.cadastrobasico = "Cadastro Basico";
-	this.nome = "Nome";
-	this.telefone = "Telefone";
-	this.email = "E-mail";
+	this.cadastropf = "Registro de Persona Fisica";
+	this.cadastrobasico = "Registro Basico";
+	this.nome = "Nombre";
+	this.telefone = "Telefono";
+	this.email = "Correo electronico";
 }
 
 function pageChangeEs() 

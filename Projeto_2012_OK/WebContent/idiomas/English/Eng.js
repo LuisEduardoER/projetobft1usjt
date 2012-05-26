@@ -1,36 +1,36 @@
 function pageEng()
 {
-	this.selecaoIdioma = "Selecao de Idiomas";
-	this.selecionaIdioma = "Selecione o Idioma";
-	this.btnPortugues = "Portugues";
-	this.btnIngles = "Ingles";
-	this.btnEspanhol = "Espanhol";
-	this.Enviar = "Enviar";
-	this.Cancelar = "Cancelar";
-	this.login = "Entrar";
-	this.usuario = "Usuario";
-	this.senha = "Senha";
-	this.agencia = "Agencia";
-	this.message1 = "Login Efetuado com sucesso!!";
-	this.message2 = "Login/Senha Incorretos!!";
-	this.bemvin = "Bem Vindo, ";
-	this.locvei = "Locadora de Veiculos";
-	this.cliente = "Cliente";
-	this.pf = "Pessoa Fisica";
-	this.pj = "Pessoa Juridica";
-	this.cadastra = "Cadastrar";
-	this.consulta = "Consultar";
-	this.edita = "Editar";
-	this.exclui = "Excluir";
-	this.veiculo = "Veiculo";
-	this.finaliza = "Finalizar";
-	this.loc = "Locacao";
-	this.logout = "Sair";
-	this.cadastropf = "Cadastro de Pessoa Fisica";
-	this.cadastrobasico = "Cadastro Basico";
-	this.nome = "Nome";
-	this.telefone = "Telefone";
-	this.email = "E-mail";
+	this.selecaoIdioma = "Language Selection";
+	this.selecionaIdioma = "Select Language";
+	this.btnPortugues = "Portuguese";
+	this.btnIngles = "English";
+	this.btnEspanhol = "Spanish";
+	this.Enviar = "Send";
+	this.Cancelar = "Cancel";
+	this.login = "Enter";
+	this.usuario = "User";
+	this.senha = "Password";
+	this.agencia = "Agency";
+	this.message1 = "Login Successfully!!";
+	this.message2 = "Username/Password Incorrect!!";
+	this.bemvin = "Welcome, ";
+	this.locvei = "Rent a Vehicles";
+	this.cliente = "Customer";
+	this.pf = "Physical Person";
+	this.pj = "Juridical Person";
+	this.cadastra = "Register";
+	this.consulta = "See";
+	this.edita = "Edit";
+	this.exclui = "Delete";
+	this.veiculo = "Vehicle";
+	this.finaliza = "Finish";
+	this.loc = "Lease";
+	this.logout = "Exit";
+	this.cadastropf = "Registration of Physical Person";
+	this.cadastrobasico = "Basic Registration";
+	this.nome = "Name";
+	this.telefone = "Telephone";
+	this.email = "Email";
 }
 
 function pageChangeEn() 
