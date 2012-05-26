@@ -27,6 +27,7 @@
 	String nasc = "";
 	String sexo = "";
 	String nome = "";
+	String loc = "";
 	
 try{
 	
@@ -102,6 +103,7 @@ if(rs2.next())
 		nasc = rs2.getString("datanasc");
 		sexo = rs2.getString("sexo");
 		nome = rs2.getString("nome");
+		loc = rs2.getString("loc");
 	}
 	
 	else
@@ -115,11 +117,12 @@ if(rs2.next())
 		nasc = rs2.getString("datanasc");
 		sexo = rs2.getString("sexo");
 		nome = rs2.getString("nome");
+		loc = rs2.getString("loc");
 	}
 	
 	response.sendRedirect("Consulta_CliF.jsp?user="+user+"&agencia="+agencia+"&consulta="+consulta+"&cpf="+cpf+"&rg="+rg+"&pass="+passaporte+"&fone="+fone+
 			"&email="+email+"&cnh="+cnh+"&catcnh="+catcnh+"&estadocnh="+estadocnh+"&datacnh="+datacnh+"&valcnh="+valcnh+"&nasc="+nasc+
-			"&sexo="+sexo+"&nome="+nome);
+			"&sexo="+sexo+"&nome="+nome+"&loc="+loc);
 }
 else
 {

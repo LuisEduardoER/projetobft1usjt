@@ -13,7 +13,6 @@
 	String idcli = request.getParameter("idcli");
 	String tipocli = request.getParameter("tipocli");
 	String idvei = request.getParameter("idvei");
-	String tipokm = request.getParameter("tipokm");
 	String gps = request.getParameter("gps");
 	String bebe = request.getParameter("bebe");
 	String motorista = request.getParameter("motorista");
@@ -26,7 +25,12 @@
 	String horadev = request.getParameter("horadev");
 	String registro = request.getParameter("registro");
 	String sitloc = "Ativa";
-	String cpf, cnpj, pass = "";
+	String cpf = "";
+	String cnpj = "";
+	String pass = "";
+	String kmini = "";
+	String sql2 = "";
+	String sql3 = ""; 
 	
 	if(gps != null)
 	{
@@ -55,19 +59,6 @@
 		motorista = "não";
 	}
 	
-	if(tipokm.equals("KMLivre"))
-	{
-		tipokm = "Livre";
-	}
-	else
-	{
-		tipokm = "Controlado";
-	}
-	
-	javax.swing.JOptionPane.showMessageDialog(null,"Registro: "+registro+"\nidcli: "+idcli+"\ntipocli: "+tipocli+"\nidvei: "+idvei+"\ntipokm: "+tipokm+"\ngps: "+gps+"\nbebe: "+bebe+"\nmotorista: "+motorista+
-			"\nkm: "+km+"\ndataloc: "+dataloc+"\nhoraloc: "+horaloc+"\nagenciaLoc: "+agencialoc+"\ndatadev: "+datadev+"\nhoradev: "+horadev+
-			"\nagenciadev: "+agenciadev+"\nsitloc: "+sitloc);
-	
 	try{
 	
 		Class.forName("org.postgresql.Driver");
@@ -76,7 +67,24 @@
 			"jdbc:postgresql://localhost:5432/3ASIN", 	//banco de dados 
 			"postgres",	 									//usuario
 			"postgre");									//senha
+		
 			
+		String sql1 = "select * from Veiculo where codigo= "+idvei+"";	
+		Statement stm1 = connection.createStatement();
+		ResultSet rs1 = stm1.executeQuery(sql1);
+		if(rs1.next())
+		{
+			kmini = ""+rs1.getInt("km");
+			sql3 = "UPDATE veiculo SET sitvei='Indisponível' WHERE codigo= '"+idvei+"'";
+		}
+		else
+		{
+			javax.swing.JOptionPane.showMessageDialog(null,"Veiculo não Encontrado!!");
+			%>
+			<script>javascript:history.back();</script>
+			<%
+		}
+		
 		if(tipocli.equals("PF"))
 		{
 			String sql0 = "select * from cliente_pf where cpf ILIKE '"+idcli+"'";
@@ -86,7 +94,15 @@
 			{
 				cpf = rs.getString("cpf");
 		
-			}	
+			}
+			else
+			{
+				javax.swing.JOptionPane.showMessageDialog(null,"Cliente não Encontrado!!");
+				%>
+				<script>javascript:history.back();</script>
+				<%
+			}
+			sql2 = "UPDATE cliente_pf SET loc='Sim' WHERE cpf ILIKE '"+idcli+"'";
 		}
 		else if(tipocli.equals("PJ"))
 		{
@@ -97,26 +113,46 @@
 			{
 				cnpj = rs.getString("cnpj");
 		
-			}	
+			}
+			else
+			{
+				javax.swing.JOptionPane.showMessageDialog(null,"Cliente não Encontrado!!");
+				%>
+				<script>javascript:history.back();</script>
+				<%
+			}
+			sql2 = "UPDATE cliente_pj SET loc='Sim' WHERE cnpj ILIKE '"+idcli+"'";
 		}
 		else if(tipocli.equals("PE"))
 		{
-			String sql0 = "select * from cliente_es where pass ILIKE '"+idcli+"'";
+			String sql0 = "select * from cliente_es where passaporte ILIKE '"+idcli+"'";
 			Statement stm = connection.createStatement();
 			ResultSet rs = stm.executeQuery(sql0);
 			if(rs.next())
 			{
 				pass = rs.getString("passaporte");
 		
-			}	
+			}
+			else
+			{
+				javax.swing.JOptionPane.showMessageDialog(null,"Cliente não Encontrado!!");
+				%>
+				<script>javascript:history.back();</script>
+				<%
+			}
+			sql2 = "UPDATE cliente_es SET loc='Sim' WHERE passaporte ILIKE '"+idcli+"'";
 		}
 		
-		javax.swing.JOptionPane.showMessageDialog(null,"Cpf: "+cpf+"\nCnpj: "+cnpj+"\nPass: "+pass);
-			
-		//String sql = "insert into locacao (codlocacao,cpf,passaporte,cnpj,codveiculo,agencialoc,dataloc,horaloc,datadev,agenciadev,kminicial,gps,bebe,motorista,tipotarifa,sitloc,tipokm) values ('"+codigo+"','"+cor+"','"+chassi+"','"+placa+"','"+cidade+"','"+km+"','"+estado+"','"+modelo+"','"+kmcontrolado+"','"+kmlivre+"','"+grupo+"','"+fabricante+"','"+diaria+"','"+situacao+"')";
-		//Statement stm = connection.createStatement();
-		//stm = connection.createStatement();
-		//stm.executeUpdate(sql);
+		javax.swing.JOptionPane.showMessageDialog(null,"Registro: "+registro+"\nidcli: "+idcli+"\ntipocli: "+tipocli+"\nidvei: "+idvei+"\ntarifa: "+km+"\nKm inicial: "+kmini+"\ngps: "+gps+"\nbebe: "+bebe+"\nmotorista: "+motorista+
+				"\ndataloc: "+dataloc+"\nhoraloc: "+horaloc+"\nagenciaLoc: "+agencialoc+"\ndatadev: "+datadev+"\nhoradev: "+horadev+
+				"\nagenciadev: "+agenciadev+"\nsitloc: "+sitloc);
+		
+		String sql = "insert into locacao (codlocacao,cpf,passaporte,cnpj,codVeiculo,agenciaLoc,dataLoc,horaLoc,dataDev,agenciaDev,kmInicial,gps,bebe,motorista,tipotarifa,sitloc) values ('"+registro+"','"+cpf+"','"+pass+"','"+cnpj+"','"+idvei+"','"+agencialoc+"','"+dataloc+"','"+horaloc+"','"+datadev+"','"+agenciadev+"','"+kmini+"','"+gps+"','"+bebe+"','"+motorista+"','"+km+"','"+sitloc+"')";
+		Statement stm = connection.createStatement();
+		stm = connection.createStatement();
+		stm.executeUpdate(sql);
+		stm.executeUpdate(sql2);
+		stm.executeUpdate(sql3);
 %>  
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -131,7 +167,8 @@
 		connection.close();
 	
 		javax.swing.JOptionPane.showMessageDialog(null,"Locação efetuada com Sucesso!");
-		//response.sendRedirect("Consulta_Vei_Banco.jsp?user="+user+"&agencia="+agencia+"&consulta=codigo&codigo="+codigo);
+		response.sendRedirect("Menu_Principal.jsp?user="+user+"&agencia="+agencia);
+		
 		} 
 		catch (ClassNotFoundException e) 
 		{

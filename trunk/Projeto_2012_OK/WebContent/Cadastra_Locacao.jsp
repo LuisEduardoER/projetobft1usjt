@@ -19,6 +19,23 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Cadastrar Locação </title>
+
+<script language="JavaScript" type="text/JavaScript">
+
+
+function habilitaCampo(valor)
+	{
+		if (valor == "kmlivre")
+		{
+			document.getElementById('ok').disabled = false;
+        }
+		else
+		{
+			document.getElementById('ok').disabled = false;
+        }
+}
+</script>
+
 </head>
 <body text="#000000">
 
@@ -46,10 +63,6 @@
 	</tr>
 	<tr>
 		<td><center><INPUT TYPE="text" name="idvei" VALUE="">&nbsp&nbsp<img src= "imagens/lupa.png" width=18 height=18></center></td>
-		<td><center><SELECT NAME="tipokm">
-									<OPTION >KMLivre
-									<OPTION >KMControlado
-									</SELECT></td>
 	</tr>
 	</table>
 	<br>
@@ -64,8 +77,8 @@
 	</tr>
 		<td colspan=2>
 			<face="arial" size="12"><center>Tipo de Tarifa:</>
-			<input type="radio" name="km" value="kmlivre">KM Livre</>
-			<input type="radio" name="km" value="kmcontrolado">KM Controlado</>
+			<input type="radio" name="km" id="kml" value="kmlivre" onclick="habilitaCampo(this.value)">Km Livre</>
+			<input type="radio" name="km" id="kmc" value="kmcontrolado" onclick="habilitaCampo(this.value)">Km Controlado</>
 		</td>
 	</table></center>
 	
@@ -96,19 +109,15 @@
 	
 	<center><table border=0>
 	<tr>
-	<td></td>
-	<td>Devolução Prevista</td>
-	<td></td>
+	<td colspan=2><center>Devolução Prevista</td>
 	</tr>
 	<tr></tr>
 	<tr>
 		<td><face="arial" size="12"><center>Data</td>
-		<td><face="arial" size="12"><center>Hora</td>
 		<td><face="arial" size="12"><center>Local</td>
 	</tr>
 	<tr>
 		<td><INPUT TYPE="text" name="datadev" VALUE=""></td>
-		<td><INPUT TYPE="text" name="horadev" VALUE=""></td>
 		<td><SELECT NAME="agenciadev">
 					<OPTION >mooca7367
 					<OPTION SELECTED>florianopolis035
@@ -118,7 +127,7 @@
 	
 	<br></center>
 	<face="arial" size="12">Número de Registro</> <INPUT TYPE="text" NAME="registro" VALUE="<%=registro %>">
-	<INPUT TYPE="submit" VALUE= "OK">
+	<INPUT TYPE="submit" class="campo" nome="ok" id="ok" VALUE= "OK" disabled>
 	<input type='button' onclick='javascript:history.back()' value='Voltar' name='Voltar'>
 	
 	</form>		
