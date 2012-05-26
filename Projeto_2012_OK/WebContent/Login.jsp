@@ -65,7 +65,7 @@
 						  </SELECT>
 		<br><br>
 		<center><INPUT type="submit" value= "OK" data-bind="text: Enviar" />
-				<INPUT type="reset" value= "Clear" data-bind="text: Limpar" /></center>
+				<INPUT type="reset" value= "Clear" data-bind="text: limpar" /></center>
 	</form>
 	
 		
