@@ -56,8 +56,7 @@ function pagePt()
 	this.dadosbasicos = "Dados Basicos";
 	this.message4 = "Cliente cadastrado com Sucesso!";
 	this.message5 = "Erro";
-	
-	
+		
 }
 
 function pageChangePt() 

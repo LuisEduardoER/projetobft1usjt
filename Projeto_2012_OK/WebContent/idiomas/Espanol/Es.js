@@ -53,7 +53,9 @@ function pageEs()
 	this.brasileiro = "Brasileno";
 	this.message3 = "No se encontro al Cliente!!";
 	
-	
+	this.dadosbasicos = "Dados Basicos";
+	this.message4 = "Cliente cadastrado com Sucesso!";
+	this.message5 = "Erro";
 	
 }
 
