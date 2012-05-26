@@ -1,6 +1,6 @@
 function pageEs()
 {
-	this.selecaoIdioma = "Selecao de Idiomas";
+	this.selecaoIdioma = "Selecao de Idioma";
 	this.selecionaIdioma = "Selecione o Idioma";
 	this.btnPortugues = "Portugues";
 	this.btnIngles = "Ingles";
@@ -13,7 +13,7 @@ function pageEs()
 	this.agencia = "Agencia";
 	this.message1 = "Login Efetuado com sucesso!!";
 	this.message2 = "Login/Senha Incorretos!!";
-	this.bemvin = "Bem Vindo, ";
+	this.bemvin = "Bienvenido, ";
 	this.locvei = "Locadora de Veiculos";
 	this.cliente = "Cliente";
 	this.pf = "Pessoa Fisica";
@@ -25,7 +25,7 @@ function pageEs()
 	this.veiculo = "Veiculo";
 	this.finaliza = "Finalizar";
 	this.loc = "Locacao";
-	this.logout = "Sair";
+	this.logout = "Salir";
 }
 
 function pageChangeEs() 
