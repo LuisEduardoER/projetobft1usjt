@@ -1,31 +1,34 @@
-function pageIndexEng()
+function pageEng()
 {
-	this.selecaoIdioma = "Select of Languages";
-	this.selecionaIdioma = "Select Language";
-	this.btnPortugues = "Portuguese";
-	this.btnIngles = "English";
-	this.btnEspanhol = "Spanish";
-	this.Enviar = "Send";
-	this.Cancelar = "Cancel";
+	this.selecaoIdioma = "Selecao de Idiomas";
+	this.selecionaIdioma = "Selecione o Idioma";
+	this.btnPortugues = "Portugues";
+	this.btnIngles = "Ingles";
+	this.btnEspanhol = "Espanhol";
+	this.Enviar = "Enviar";
+	this.Cancelar = "Cancelar";
+	this.login = "Entrar";
+	this.usuario = "Usuario";
+	this.senha = "Senha";
+	this.agencia = "Agencia";
+	this.message1 = "Login Efetuado com sucesso!!";
+	this.message2 = "Login/Senha Incorretos!!";
+	this.bemvin = "Bem Vindo, ";
+	this.locvei = "Locadora de Veiculos";
+	this.cliente = "Cliente";
+	this.pf = "Pessoa Fisica";
+	this.pj = "Pessoa Juridica";
+	this.cadastra = "Cadastrar";
+	this.consulta = "Consultar";
+	this.edita = "Editar";
+	this.exclui = "Excluir";
+	this.veiculo = "Veiculo";
+	this.finaliza = "Finalizar";
+	this.loc = "Locacao";
+	this.logout = "Sair";
 }
 
-function pageIndexChangeEn() 
+function pageChangeEn() 
 {
-    ko.applyBindings(new pageIndexEng());
-}
-
-function pageLoginEn()
-{
-	this.login = "Login";
-	this.usuario = "User";
-	this.senha = "Password";
-	this.agencia = "Agency";
-	this.Enviar = "Send";
-	this.Limpar = "Clean";
-	this.Cancelar = "Cancel";
-}
-
-function pageLoginChangeEn() 
-{
-    ko.applyBindings(new pageLoginEn());
+    ko.applyBindings(new pageEng());
 }

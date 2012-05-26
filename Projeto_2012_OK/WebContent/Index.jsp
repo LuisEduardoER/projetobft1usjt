@@ -14,7 +14,7 @@
 <title>Seleção de Idioma</title>
 
 </head>
-	<body text="#000000" onload="pageIndexChangePt()"><HR WIDTH="75%">
+	<body text="#000000" onload="pageChangePt()"><HR WIDTH="75%">
 	<h1><P align="center"><label data-bind="text: selecaoIdioma"></label></h1></P>
 	<face="arial" size="12">
 	<th><center><label data-bind="text: selecionaIdioma"></label></th><br><br>
@@ -35,13 +35,13 @@
 		switch(Integer.parseInt(rad))
         {
             case 1:
-            	response.sendRedirect("Login.jsp?idi=pageLoginChangePt()");
+            	response.sendRedirect("Login.jsp?idi=pageChangePt()");
             break;
             case 2:
-            	response.sendRedirect("Login.jsp?idi=pageLoginChangeEn()");
+            	response.sendRedirect("Login.jsp?idi=pageChangeEn()");
             break;
             case 3:
-            	response.sendRedirect("Login.jsp?idi=pageLoginChangeEs()");
+            	response.sendRedirect("Login.jsp?idi=pageChangeEs()");
             break;
             default:
             	
@@ -57,19 +57,19 @@
 	<table align="center" border=0>
 	<tr>
 		<td><center><img src="imagens\BR.png" width="80" height="80"><br>
-			<center><input type="radio" name="radio" value="1" onclick="pageIndexChangePt()"><br><label data-bind="text: btnPortugues"></label>
+			<center><input type="radio" name="radio" value="1" onclick="pageChangePt()"><br><label data-bind="text: btnPortugues"></label>
 		</td>
 		
 		<td></td>
 		
 		<td><center><img src="imagens\EUA.gif" width="80" height="80"onclick="pageIndexChangeEn()" ><br>
-			<center><input type="radio" name="radio" value="2" onclick="pageIndexChangeEn()"><br><label data-bind="text: btnIngles"></label>
+			<center><input type="radio" name="radio" value="2" onclick="pageChangeEn()"><br><label data-bind="text: btnIngles"></label>
 		</td>
 		
 		<td></td>
 		
 		<td><center><img src="imagens\ESP.gif" width="80" height="80"onclick="pageIndexChangeEs()" ><br>
-			<center><input type="radio" name="radio" value="3" onclick="pageIndexChangeEs()"><br><label data-bind="text: btnEspanhol"></label>
+			<center><input type="radio" name="radio" value="3" onclick="pageChangeEs()"><br><label data-bind="text: btnEspanhol"></label>
 		</td>
 	</tr>
 	</table>

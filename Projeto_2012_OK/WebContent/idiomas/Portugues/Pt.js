@@ -1,4 +1,4 @@
-function pageIndexPt()
+function pagePt()
 {
 	this.selecaoIdioma = "Selecao de Idiomas";
 	this.selecionaIdioma = "Selecione o Idioma";
@@ -7,27 +7,29 @@ function pageIndexPt()
 	this.btnEspanhol = "Espanhol";
 	this.Enviar = "Enviar";
 	this.Cancelar = "Cancelar";
-}
-
-function pageIndexChangePt() 
-{
-    ko.applyBindings(new pageIndexPt());
-}
-
-function pageLoginPt()
-{
 	this.login = "Entrar";
 	this.usuario = "Usuario";
 	this.senha = "Senha";
 	this.agencia = "Agencia";
-	this.Enviar = "Enviar";
-	this.Limpar = "Limpar";
-	this.Cancelar = "Cancelar";
 	this.message1 = "Login Efetuado com sucesso!!";
 	this.message2 = "Login/Senha Incorretos!!";
+	this.bemvin = "Bem Vindo, ";
+	this.locvei = "Locadora de Veiculos";
+	this.cliente = "Cliente";
+	this.pf = "Pessoa Fisica";
+	this.pj = "Pessoa Juridica";
+	this.cadastra = "Cadastrar";
+	this.consulta = "Consultar";
+	this.edita = "Editar";
+	this.exclui = "Excluir";
+	this.veiculo = "Veiculo";
+	this.finaliza = "Finalizar";
+	this.loc = "Locacao";
+	this.logout = "Sair";
 }
 
-function pageLoginChangePt() 
+function pageChangePt() 
 {
-    ko.applyBindings(new pageLoginPt());
+    ko.applyBindings(new pagePt());
 }
+
