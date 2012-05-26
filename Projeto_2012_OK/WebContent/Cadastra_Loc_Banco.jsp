@@ -111,10 +111,10 @@
 			}	
 		}
 		
-		String sql = "insert into locacao (codlocacao,cpf,passaporte,cnpj,codveiculo,agencialoc,dataloc,horaloc,datadev,agenciadev,kminicial,gps,bebe,motorista,tipotarifa,sitloc,tipokm) values ('"+codigo+"','"+cor+"','"+chassi+"','"+placa+"','"+cidade+"','"+km+"','"+estado+"','"+modelo+"','"+kmcontrolado+"','"+kmlivre+"','"+grupo+"','"+fabricante+"','"+diaria+"','"+situacao+"')";
-		Statement stm = connection.createStatement();
-		stm = connection.createStatement();
-		stm.executeUpdate(sql);
+		//String sql = "insert into locacao (codlocacao,cpf,passaporte,cnpj,codveiculo,agencialoc,dataloc,horaloc,datadev,agenciadev,kminicial,gps,bebe,motorista,tipotarifa,sitloc,tipokm) values ('"+codigo+"','"+cor+"','"+chassi+"','"+placa+"','"+cidade+"','"+km+"','"+estado+"','"+modelo+"','"+kmcontrolado+"','"+kmlivre+"','"+grupo+"','"+fabricante+"','"+diaria+"','"+situacao+"')";
+		//Statement stm = connection.createStatement();
+		//stm = connection.createStatement();
+		//stm.executeUpdate(sql);
 %>  
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
