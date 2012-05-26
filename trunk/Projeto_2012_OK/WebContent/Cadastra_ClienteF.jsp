@@ -67,52 +67,52 @@ function foneMask(local,string)
 		<td COLSPAN = 2><face="arial" size="12"><center><label data-bind="text: email"></label></><br><INPUT TYPE="text" name="email" maxlength="40" size="40" VALUE=""></center></td>
 	</tr>
 	<tr>
-		<td class="texto" COLSPAN = 2 ><face="arial" size="12"><center>Sexo</><br>
-			<input type="radio" name="sexo" value="Masculino">Masculino</>
-			<input type="radio" name="sexo" value="Feminino">Feminino</>
+		<td class="texto" COLSPAN = 2 ><face="arial" size="12"><center><label data-bind="text: sexo"></label></><br>
+			<input type="radio" name="sexo" value="Masculino"><label data-bind="text: masculino"></label></>
+			<input type="radio" name="sexo" value="Feminino"><label data-bind="text: feminino"></label></>
 		</td>
 		<td></td>
-		<td COLSPAN = 2 ><face="arial" size="12"><center>Data de Nascimento</><br>
+		<td COLSPAN = 2 ><face="arial" size="12"><center><label data-bind="text: datnasc"></label></><br>
 			<INPUT TYPE="text" name="datanasc" maxlength="10" onKeyPress="dateMask(this,this.value)" VALUE=""></center>
 		</td>
 	</tr>
 	<tr>
 		<td></td>
-		<td class="texto" COLSPAN = 2 ><face="arial" size="12"><br><center>Estrangeiro</><br>
-			<input type="radio" name="estrangeiro" id="estraS" value="Sim" onclick="habilitaCampo(this.value)">Sim</>
-			<input type="radio" name="estrangeiro" id="estraN" value="Não" onclick="habilitaCampo(this.value)">Não</>
+		<td class="texto" COLSPAN = 2 ><face="arial" size="12"><br><center><label data-bind="text: estrangeiro"></label></><br>
+			<input type="radio" name="estrangeiro" id="estraS" value="Sim" onclick="habilitaCampo(this.value)"><label data-bind="text: sim"></label></>
+			<input type="radio" name="estrangeiro" id="estraN" value="Não" onclick="habilitaCampo(this.value)"><label data-bind="text: nao"></label></>
 		</td>
 	</tr>
 	</table>
 	<br><br>
-	<face="arial" size="20"><center>Documentos</center><P>
+	<face="arial" size="20"><center><label data-bind="text: doc"></label></center><P>
 	<center></center><table border = "0">
 	<tr>
-		<td><face="arial" size="12"><center>CPF</><br><INPUT class="campo" TYPE="text" name="cpf" id="cpf" maxlength="16" disabled></center></td>
-		<td><face="arial" size="12"><center>Passaporte</><br><INPUT class="campo" TYPE="text" name="pass" id="pass" maxlength="20" disabled></center></td>
+		<td><face="arial" size="12"><center><label data-bind="text: cpf"></label></><br><INPUT class="campo" TYPE="text" name="cpf" id="cpf" maxlength="16" disabled></center></td>
+		<td><face="arial" size="12"><center><label data-bind="text: pass"></label></><br><INPUT class="campo" TYPE="text" name="pass" id="pass" maxlength="20" disabled></center></td>
 		<td></td>
 		<td></td>
 		<td></td>
-		<td><face="arial" size="12"><center>CNH</><br><INPUT TYPE="text" name="cnh" id="cnh" maxlength="11"></center></td>
-		<td><face="arial" size="12"><center>Categoria CNH</><br><INPUT TYPE="text" name="catcnh" maxlength="2" VALUE=""></center></td>
-		<td><face="arial" size="12"><center>Estado Emissor</><br><INPUT TYPE="text" name="estemcnh" maxlength="20" VALUE=""></center></td>
+		<td><face="arial" size="12"><center><label data-bind="text: cnh"></label></><br><INPUT TYPE="text" name="cnh" id="cnh" maxlength="11"></center></td>
+		<td><face="arial" size="12"><center><label data-bind="text: catcnh"></label></><br><INPUT TYPE="text" name="catcnh" maxlength="2" VALUE=""></center></td>
+		<td><face="arial" size="12"><center><label data-bind="text: estadocnh"></label></><br><INPUT TYPE="text" name="estemcnh" maxlength="20" VALUE=""></center></td>
 	</tr>
 	<tr>
-		<td><face="arial" size="12"><center>RG</><br><INPUT class="campo" TYPE="text" name="rg" id="rg" maxlength="12" disabled></center></td>
+		<td><face="arial" size="12"><center><label data-bind="text: rg"></label></><br><INPUT class="campo" TYPE="text" name="rg" id="rg" maxlength="12" disabled></center></td>
 		<td></td>
 		<td></td>
 		<td></td>
 		<td></td>
 		<td></td>
-		<td><face="arial" size="12"><center>Data de Emissão</><br><INPUT TYPE="text" name="dataemcnh" id="dataemcnh" maxlength="10" onKeyPress="dateMask(this,this.value)"></center></td>
-		<td><face="arial" size="12"><center>Data de Validade</><br><INPUT TYPE="text" name="datavalcnh" id="datavalcnh" maxlength="10" onKeyPress="dateMask(this,this.value)"></center></td>
+		<td><face="arial" size="12"><center><label data-bind="text: emiscnh"></label></><br><INPUT TYPE="text" name="dataemcnh" id="dataemcnh" maxlength="10" onKeyPress="dateMask(this,this.value)"></center></td>
+		<td><face="arial" size="12"><center><label data-bind="text: valcnh"></label></><br><INPUT TYPE="text" name="datavalcnh" id="datavalcnh" maxlength="10" onKeyPress="dateMask(this,this.value)"></center></td>
 	</tr>
 	</table>
 	
 	<br>
-	<center>	<INPUT type="submit" value= "OK">
-				<INPUT type="reset" value= "Limpar">
-				<input type='button' onclick='javascript:history.back()' value='Voltar' name='Voltar'></center>
+	<center>	<INPUT type="submit" value= "OK" data-bind="text: enviar">
+				<INPUT type="reset" value= "Limpar" data-bind="text: limpar">
+				<input type='button' onclick='javascript:history.back()' value='Voltar' name='Voltar' label data-bind="text: voltar"></center>
 </form>
 
 </body>

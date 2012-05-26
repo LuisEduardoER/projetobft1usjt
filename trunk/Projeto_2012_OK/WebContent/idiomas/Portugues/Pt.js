@@ -31,10 +31,33 @@ function pagePt()
 	this.nome = "Nome";
 	this.telefone = "Telefone";
 	this.email = "E-mail";
+	
+	this.sexo = "Sexo";
+	this.masculino = "Masculino";
+	this.feminino = "Feminino";
+	this.datnasc = "Data de Nascimento";
+	this.estrangeiro = "Estrangeiro";
+	this.sim = "Sim";
+	this.nao = "Nao";
+	this.doc = "Documentos";
+	this.cpf = "CPF";
+	this.pass = "Passaporte";
+	this.cnh = "CNH";
+	this.catcnh = "Categoria CNH";
+	this.estadocnh = "Estado Emissor";
+	this.rg = "RG";
+	this.emiscnh = "Data de Emissao";
+	this.valcnh = "Validade";
+	this.limpar = "Limpar";
+	this.voltar = "Voltar";
+	this.consultapf = "Consulta Cliente Pessoa Fisica";
+	this.brasileiro = "Brasileiro";
+	this.estrangeiro = "Estrangeiro";
+	this.message3 = "Cliente não Encontrado!!";
+	
 }
 
 function pageChangePt() 
 {
     ko.applyBindings(new pagePt());
 }
-

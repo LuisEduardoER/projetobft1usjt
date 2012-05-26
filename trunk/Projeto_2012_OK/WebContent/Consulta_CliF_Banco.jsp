@@ -11,6 +11,7 @@
 
 	String user = request.getParameter("user");
 	String agencia = request.getParameter("agencia");
+	String idi = request.getParameter("idi");
 	String consulta = request.getParameter("consulta");
 	String passaporte1 = request.getParameter("pass");
 	String cpf1 = request.getParameter("cpf");
@@ -62,10 +63,16 @@ try{
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+
+	<script src="idiomas\Portugues\Pt.js" type="text/javascript"></script>
+    <script src="idiomas\English\Eng.js" type="text/javascript"></script>
+    <script src="idiomas\Espanol\Es.js" type="text/javascript"></script>
+    <script src="idiomas\knockout-2.0.0.js" type="text/javascript"></script>
+
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title></title>
 </head>
-<body>
+<body text="#000000" onload="<%=idi%>">
 
 <%
 
@@ -88,7 +95,7 @@ if(rs1.next())
 }
 else
 {
-	javax.swing.JOptionPane.showMessageDialog(null,"Cliente não Encontrado!!");
+	javax.swing.JOptionPane.showMessageDialog(null,"message3");
 }
 
 if(rs2.next())
@@ -122,11 +129,11 @@ if(rs2.next())
 	
 	response.sendRedirect("Consulta_CliF.jsp?user="+user+"&agencia="+agencia+"&consulta="+consulta+"&cpf="+cpf+"&rg="+rg+"&pass="+passaporte+"&fone="+fone+
 			"&email="+email+"&cnh="+cnh+"&catcnh="+catcnh+"&estadocnh="+estadocnh+"&datacnh="+datacnh+"&valcnh="+valcnh+"&nasc="+nasc+
-			"&sexo="+sexo+"&nome="+nome+"&loc="+loc);
+			"&sexo="+sexo+"&nome="+nome+"&loc="+loc+"&idi="+idi);
 }
 else
 {
-	response.sendRedirect("Consulta_ClienteF.jsp?user="+user+"&agencia="+agencia);
+	response.sendRedirect("Consulta_ClienteF.jsp?user="+user+"&agencia="+agencia+"&idi="+idi);
 }
 
 connection.close();
