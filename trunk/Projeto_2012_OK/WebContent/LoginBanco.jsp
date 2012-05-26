@@ -49,14 +49,14 @@ try{
 	{
 		String loginok = rs.getString("login");
 		String senh = rs.getString("senha");
-		javax.swing.JOptionPane.showMessageDialog(null,""+%><label data-bind="text: login"></label><%);
+		javax.swing.JOptionPane.showMessageDialog(null,"Message1");
 		
 		response.sendRedirect("Menu_Principal.jsp?user="+loginok+"&agencia="+agencia+"&idi="+idi);
 		
 	}
 	else
 	{
-		javax.swing.JOptionPane.showMessageDialog(null,""+mes2);
+		javax.swing.JOptionPane.showMessageDialog(null,"Message2");
 		response.sendRedirect("Login.jsp?idi="+idi);
 	}
 
