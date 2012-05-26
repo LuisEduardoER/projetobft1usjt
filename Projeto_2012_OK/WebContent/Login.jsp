@@ -2,16 +2,29 @@
     pageEncoding="UTF-8"%>
     
  <%
- 	String ling = request.getParameter("ling");
+	int idi = Integer.parseInt(request.getParameter("idi"));
+	javax.swing.JOptionPane.showMessageDialog(null,"Idioma: "+idi);
  %>
+ 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Login</title>
+
+	<script src="idiomas\Portugues\Pt.js" type="text/javascript"></script>
+    <script src="idiomas\English\Eng.js" type="text/javascript"></script>
+    <script src="idiomas\Espanol\Es.js" type="text/javascript"></script>
+    <script src="idiomas\knockout-2.0.0.js" type="text/javascript"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Login</title>
 </head>
-<body>
-	<%
+
+<body onload="pageLoginChangeEn()">
+
+
+
+<%
 		String nome = request.getParameter("user");
 		String senha = request.getParameter("pass");
 		
@@ -34,26 +47,26 @@
 	<form name="form1" id="form1" action = "LoginBanco.jsp" method = "post"> 
 	<br></br>
 	
-	<h1><P face="arial" align="center">Login</h1></P>
+	<h1><P face="arial" align="center"><label data-bind="text: login"></label></h1></P>
 		<center><table border = 0>
 			<tr rowspan = 2>
 				<td><img src = "imagens/cadeado.png" width=150 height=150></td>
 				<td></td>
-				<td><face="arial" size="16"><center>Usuário</center></><br> 
+				<td><face="arial" size="16"><center><label data-bind="text: usuario"></label></center></><br> 
 					<INPUT type="text" name="user"><br><br>
-					<face="arial" size="16"><center>Senha</><br> 
+					<face="arial" size="16"><center><label data-bind="text: senha"></label></><br> 
 					<INPUT type="password" name="pass"></center></td>	
 			</tr>
 		</table>
 		<br>
-		<face="arial" size="12">Agência</><center><br>
+		<face="arial" size="12"><label data-bind="text: agencia"></label></><center><br>
 						  <SELECT NAME="agencias">
 						  <OPTION >mooca7367
 						  <OPTION >florianopolis035
 						  </SELECT>
 		<br><br>
-		<center><INPUT type="submit" value= "OK">
-				<INPUT type="reset" value= "Clear"></center>
+		<center><INPUT type="submit" value= "OK" data-bind="text: Enviar" />
+				<INPUT type="reset" value= "Clear" data-bind="text: Limpar" /></center>
 	</form>
 	
 		
