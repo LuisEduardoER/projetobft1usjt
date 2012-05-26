@@ -90,7 +90,7 @@
 		}
 		else if(tipocli.equals("PJ"))
 		{
-			String sql0 = "select * from cliente_pj where cpf ILIKE '"+idcli+"'";
+			String sql0 = "select * from cliente_pj where cnpj ILIKE '"+idcli+"'";
 			Statement stm = connection.createStatement();
 			ResultSet rs = stm.executeQuery(sql0);
 			if(rs.next())
@@ -101,7 +101,7 @@
 		}
 		else if(tipocli.equals("PE"))
 		{
-			String sql0 = "select * from cliente_es where cpf ILIKE '"+idcli+"'";
+			String sql0 = "select * from cliente_es where pass ILIKE '"+idcli+"'";
 			Statement stm = connection.createStatement();
 			ResultSet rs = stm.executeQuery(sql0);
 			if(rs.next())
@@ -111,6 +111,8 @@
 			}	
 		}
 		
+		javax.swing.JOptionPane.showMessageDialog(null,"Cpf: "+cpf+"\nCnpj: "+cnpj+"\nPass: "+pass);
+			
 		//String sql = "insert into locacao (codlocacao,cpf,passaporte,cnpj,codveiculo,agencialoc,dataloc,horaloc,datadev,agenciadev,kminicial,gps,bebe,motorista,tipotarifa,sitloc,tipokm) values ('"+codigo+"','"+cor+"','"+chassi+"','"+placa+"','"+cidade+"','"+km+"','"+estado+"','"+modelo+"','"+kmcontrolado+"','"+kmlivre+"','"+grupo+"','"+fabricante+"','"+diaria+"','"+situacao+"')";
 		//Statement stm = connection.createStatement();
 		//stm = connection.createStatement();
