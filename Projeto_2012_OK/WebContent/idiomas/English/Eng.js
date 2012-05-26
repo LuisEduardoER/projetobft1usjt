@@ -26,6 +26,11 @@ function pageEng()
 	this.finaliza = "Finalizar";
 	this.loc = "Locacao";
 	this.logout = "Sair";
+	this.cadastropf = "Cadastro de Pessoa Fisica";
+	this.cadastrobasico = "Cadastro Basico";
+	this.nome = "Nome";
+	this.telefone = "Telefone";
+	this.email = "E-mail";
 }
 
 function pageChangeEn() 

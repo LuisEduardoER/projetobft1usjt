@@ -1,5 +1,5 @@
 <head> 
-<meta http-equiv = "refresh" content = "10" />
+<meta http-equiv = "refresh" content = "60" />
 
 	<script src="idiomas\Portugues\Pt.js" type="text/javascript"></script>
     <script src="idiomas\English\Eng.js" type="text/javascript"></script>
@@ -51,34 +51,34 @@
               <li>
               	<a class="MenuBarItemSubmenu" href="#"><center><label data-bind="text: pf"></label></center></a>
               	<ul>
-              		<li><a href="Cadastra_ClienteF.jsp?user=<%= user %>&agencia=<%=agencia%>"><label data-bind="text: cadastra"></label></a></li>
-              		<li><a href="Consulta_ClienteF.jsp?user=<%= user %>&agencia=<%=agencia%>"><label data-bind="text: consulta"></label></a></li>
-              		<li><a href="Altera_ClienteF.jsp?user=<%= user %>&agencia=<%=agencia%>"><label data-bind="text: edita"></label></a></li>
-              		<li><a href="Deleta_ClienteF.jsp?user=<%= user %>&agencia=<%=agencia%>"><label data-bind="text: exclui"></label></a></li>
+              		<li><a href="Cadastra_ClienteF.jsp?user=<%= user %>&agencia=<%=agencia%>&idi=<%=idi%>"><label data-bind="text: cadastra"></label></a></li>
+              		<li><a href="Consulta_ClienteF.jsp?user=<%= user %>&agencia=<%=agencia%>&idi=<%=idi%>"><label data-bind="text: consulta"></label></a></li>
+              		<li><a href="Altera_ClienteF.jsp?user=<%= user %>&agencia=<%=agencia%>&idi=<%=idi%>"><label data-bind="text: edita"></label></a></li>
+              		<li><a href="Deleta_ClienteF.jsp?user=<%= user %>&agencia=<%=agencia%>&idi=<%=idi%>"><label data-bind="text: exclui"></label></a></li>
               	</ul>
               </li>
               <li>
               	<a class="MenuBarItemSubmenu" href="#"><center><label data-bind="text: pj"></label></center></a>
               	<ul>
-              		<li><a href="Cadastra_ClienteJ.jsp?user=<%= user %>&agencia=<%=agencia%>"><label data-bind="text: cadastra"></label></a></li>
-              		<li><a href="Consulta_ClienteJ.jsp?user=<%= user %>&agencia=<%=agencia%>"><label data-bind="text: consulta"></label></a></li>
-              		<li><a href="Altera_ClienteJ.jsp?user=<%= user %>&agencia=<%=agencia%>"><label data-bind="text: edita"></label></a></li>
-              		<li><a href="Deleta_ClienteJ.jsp?user=<%= user %>&agencia=<%=agencia%>"><label data-bind="text: exclui"></label></a></li>
+              		<li><a href="Cadastra_ClienteJ.jsp?user=<%= user %>&agencia=<%=agencia%>&idi=<%=idi%>"><label data-bind="text: cadastra"></label></a></li>
+              		<li><a href="Consulta_ClienteJ.jsp?user=<%= user %>&agencia=<%=agencia%>&idi=<%=idi%>"><label data-bind="text: consulta"></label></a></li>
+              		<li><a href="Altera_ClienteJ.jsp?user=<%= user %>&agencia=<%=agencia%>&idi=<%=idi%>"><label data-bind="text: edita"></label></a></li>
+              		<li><a href="Deleta_ClienteJ.jsp?user=<%= user %>&agencia=<%=agencia%>&idi=<%=idi%>"><label data-bind="text: exclui"></label></a></li>
               	</ul>
               </li>
             </ul>
           </li>
           <li><a href="#" class="MenuBarItemSubmenu"><center><label data-bind="text: veiculo"></label></center></a>
             <ul>
-              <li><a href="Cadastra_Veiculo.jsp?user=<%= user %>&agencia=<%=agencia%>"><label data-bind="text: cadastra"></label></a></li>
-              <li><a href="Consulta_Veiculo.jsp?user=<%= user %>&agencia=<%=agencia%>"><label data-bind="text: consulta"></label></a></li>
-              <li><a href="Altera_Veiculo.jsp?user=<%= user %>&agencia=<%=agencia%>"><label data-bind="text: edita"></label></a></li>
-              <li><a href="Deleta_Veiculo.jsp?user=<%= user %>&agencia=<%=agencia%>"><label data-bind="text: exclui"></label></a></li>
+              <li><a href="Cadastra_Veiculo.jsp?user=<%= user %>&agencia=<%=agencia%>&idi=<%=idi%>"><label data-bind="text: cadastra"></label></a></li>
+              <li><a href="Consulta_Veiculo.jsp?user=<%= user %>&agencia=<%=agencia%>&idi=<%=idi%>"><label data-bind="text: consulta"></label></a></li>
+              <li><a href="Altera_Veiculo.jsp?user=<%= user %>&agencia=<%=agencia%>&idi=<%=idi%>"><label data-bind="text: edita"></label></a></li>
+              <li><a href="Deleta_Veiculo.jsp?user=<%= user %>&agencia=<%=agencia%>&idi=<%=idi%>"><label data-bind="text: exclui"></label></a></li>
             </ul>
           </li>
           <li><a class="MenuBarItemSubmenu" href="#"><center><label data-bind="text: loc"></label></center></a>
             <ul>
-              <li><a href="Cadastra_Locacao.jsp?user=<%= user %>&agencia=<%=agencia%>"><label data-bind="text: cadastra"></label></a></li>
+              <li><a href="Cadastra_Locacao.jsp?user=<%= user %>&agencia=<%=agencia%>&idi=<%=idi%>"><label data-bind="text: cadastra"></label></a></li>
               <li><a href="#"><label data-bind="text: consulta"></label></a></li>
               <li><a href="#"><label data-bind="text: finaliza"></label></a></li>
             </ul>
