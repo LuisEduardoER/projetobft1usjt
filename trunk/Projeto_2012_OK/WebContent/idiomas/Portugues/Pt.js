@@ -31,7 +31,6 @@ function pagePt()
 	this.nome = "Nome";
 	this.telefone = "Telefone";
 	this.email = "E-mail";
-	
 	this.sexo = "Sexo";
 	this.masculino = "Masculino";
 	this.feminino = "Feminino";
@@ -52,8 +51,12 @@ function pagePt()
 	this.voltar = "Voltar";
 	this.consultapf = "Consulta Cliente Pessoa Fisica";
 	this.brasileiro = "Brasileiro";
-	this.estrangeiro = "Estrangeiro";
 	this.message3 = "Cliente não Encontrado!!";
+	
+	this.dadosbasicos = "Dados Basicos";
+	this.message4 = "Cliente cadastrado com Sucesso!";
+	this.message5 = "Erro";
+	
 	
 }
 

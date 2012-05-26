@@ -55,7 +55,7 @@ function foneMask(local,string)
 </head>
 <body text="#000000" onload="<%=idi%>">
 
-<form name="form1" id="form1" action = "Cadastra_CliF_Banco.jsp?user=<%= user%>&agencia=<%=agencia%>" method = "post">	
+<form name="form1" id="form1" action = "Cadastra_CliF_Banco.jsp?user=<%= user%>&agencia=<%=agencia%>&idi=<%= idi%>" method = "post">	
 
 
 	<h1><P align="center"><label data-bind="text: cadastropf"></label></h1></P>
@@ -110,7 +110,7 @@ function foneMask(local,string)
 	</table>
 	
 	<br>
-	<center>	<INPUT type="submit" value= "OK" data-bind="text: enviar">
+	<center>	<INPUT type="submit" value="ok "data-bind="text: Enviar">
 				<INPUT type="reset" value= "Limpar" data-bind="text: limpar">
 				<input type='button' onclick='javascript:history.back()' value='Voltar' name='Voltar' label data-bind="text: voltar"></center>
 </form>

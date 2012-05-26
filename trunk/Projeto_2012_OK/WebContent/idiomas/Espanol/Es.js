@@ -31,7 +31,6 @@ function pageEs()
 	this.nome = "Nombre";
 	this.telefone = "Telefono";
 	this.email = "Correo Electronico";
-	
 	this.sexo = "Sexo";
 	this.masculino = "Hombre";
 	this.feminino = "Mujer";
@@ -53,6 +52,9 @@ function pageEs()
 	this.consultapf = "Consulta al Cliente Persona Fisica";
 	this.brasileiro = "Brasileno";
 	this.message3 = "No se encontro al Cliente!!";
+	
+	
+	
 }
 
 function pageChangeEs() 
