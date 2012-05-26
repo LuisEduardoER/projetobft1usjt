@@ -33,7 +33,7 @@
 	%>
 	
 		<% 
-			response.sendRedirect("LoginBanco.jsp");
+		response.sendRedirect("LoginBanco.jsp?idi="+idi);
 			
 		%>
 	
@@ -43,7 +43,7 @@
 		{
 	%>
 	
-	<form name="form1" id="form1" action = "LoginBanco.jsp" method = "post"> 
+	<form name="form1" id="form1" action = "LoginBanco.jsp?idi=<%= idi%>" method = "post"> 
 	<br></br>
 	
 	<h1><P face="arial" align="center"><label data-bind="text: login"></label></h1></P>

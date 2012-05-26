@@ -8,9 +8,12 @@
     
 <%
 
+	String idi = request.getParameter("idi");
 	String user = request.getParameter("user");
 	String senha = request.getParameter("pass");
 	String agencia = request.getParameter("agencias");
+	String mes1 = "";
+	String mes2 = "";
 
 try{
 	
@@ -31,25 +34,30 @@ try{
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+
+	<script src="idiomas\Portugues\Pt.js" type="text/javascript"></script>
+    <script src="idiomas\English\Eng.js" type="text/javascript"></script>
+    <script src="idiomas\Espanol\Es.js" type="text/javascript"></script>
+    <script src="idiomas\knockout-2.0.0.js" type="text/javascript"></script>
+
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title></title>
 </head>
-<body>
+<body text="#000000" onload="<%=idi%>">
 <%
-		
 	if(rs.next())
 	{
 		String loginok = rs.getString("login");
 		String senh = rs.getString("senha");
-		javax.swing.JOptionPane.showMessageDialog(null,"Login Efetuado com sucesso!!!");
+		javax.swing.JOptionPane.showMessageDialog(null,""+%><label data-bind="text: login"></label><%);
 		
-		response.sendRedirect("Menu_Principal.jsp?user="+loginok+"&agencia="+agencia);
+		response.sendRedirect("Menu_Principal.jsp?user="+loginok+"&agencia="+agencia+"&idi="+idi);
 		
 	}
 	else
 	{
-		javax.swing.JOptionPane.showMessageDialog(null,"Login/Senha Incorretos!!");
-		response.sendRedirect("Login.jsp");
+		javax.swing.JOptionPane.showMessageDialog(null,""+mes2);
+		response.sendRedirect("Login.jsp?idi="+idi);
 	}
 
 	connection.close();
