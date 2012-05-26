@@ -76,7 +76,7 @@
 	
 	
 						  
-	<BR><BR><center><INPUT id="btnEntrar" name="Entrar" value="OK" type="submit" data-bind="text: Enviar" />
+	<BR><BR><center><INPUT id="btnEntrar" name="Entrar" value="OK" type="submit" data-bind="text: Enviar" /> 
 			        <INPUT id="btnSair" name="Sair" value="Sair" type="submit" onclick="window.close()" data-bind="text: Cancelar" /></center>
 	</form>
 	

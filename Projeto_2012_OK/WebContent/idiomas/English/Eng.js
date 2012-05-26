@@ -31,7 +31,6 @@ function pageEng()
 	this.nome = "Name";
 	this.telefone = "Telephone";
 	this.email = "Email";
-	
 	this.sexo = "Sex";
 	this.masculino = "Male";
 	this.feminino = "Female";
@@ -54,6 +53,9 @@ function pageEng()
 	this.brasileiro = "Brasilian";
 	this.estrangeiro = "Foreign";
 	this.message3 = "Customer not Found!!";
+	
+	
+	
 }
 
 function pageChangeEn() 
