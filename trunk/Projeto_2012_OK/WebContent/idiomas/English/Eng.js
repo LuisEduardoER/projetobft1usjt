@@ -14,7 +14,7 @@ function pageIndexChangeEn()
     ko.applyBindings(new pageIndexEng());
 }
 
-function pageLoginPt()
+function pageLoginEn()
 {
 	this.login = "Login";
 	this.usuario = "User";
@@ -25,7 +25,7 @@ function pageLoginPt()
 	this.Cancelar = "Cancel";
 }
 
-function pageLoginChangePt() 
+function pageLoginChangeEn() 
 {
-    ko.applyBindings(new pageLoginPt());
+    ko.applyBindings(new pageLoginEn());
 }

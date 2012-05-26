@@ -35,13 +35,13 @@
 		switch(Integer.parseInt(rad))
         {
             case 1:
-            	response.sendRedirect("Login.jsp?idi=1");
+            	response.sendRedirect("Login.jsp?idi=pageLoginChangePt()");
             break;
             case 2:
-            	response.sendRedirect("Login.jsp?idi=2");
+            	response.sendRedirect("Login.jsp?idi=pageLoginChangeEn()");
             break;
             case 3:
-            	response.sendRedirect("Login.jsp?idi=3");
+            	response.sendRedirect("Login.jsp?idi=pageLoginChangeEs()");
             break;
             default:
             	
