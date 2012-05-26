@@ -18,6 +18,7 @@
 	String nasc = request.getParameter("nasc");
 	String sexo = request.getParameter("sexo");
 	String nome = request.getParameter("nome");
+	String loc = request.getParameter("loc");
 %>   
  
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -78,6 +79,9 @@ if(consulta.equals("Sim"))
 				<input type="radio" name="estrangeiro" id="estraN" value="Não" checked disabled>Não</>
 			<%} %>
 		</td>
+		<td><face size="12"><br><center>Locação</><br>
+			<INPUT TYPE="text" name="loc" VALUE="<%= loc%>" disabled></center>
+		</td>
 	</tr>
 	</table>
 	<br><br>
@@ -117,10 +121,6 @@ if(consulta.equals("Sim"))
 }
 else
 {%>
-
-
-
-
 
 <form name="form1" id="form1" action = "Altera_CliF_Banco2.jsp?user=<%= user%>&agencia=<%=agencia%>&estrangeiro=<%=consulta%>&cpf=<%=cpf%>&pass=<%=pass%>" method = "post">	
 

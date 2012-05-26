@@ -18,6 +18,8 @@
 	String nasc = request.getParameter("nasc");
 	String sexo = request.getParameter("sexo");
 	String nome = request.getParameter("nome");
+	String loc = request.getParameter("loc");
+	javax.swing.JOptionPane.showMessageDialog(null,"Locacao: "+loc);
 %>   
  
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -64,7 +66,7 @@ if(consulta.equals("Sim"))
 	</tr>
 	<tr>
 		<td></td>
-		<td class="texto" COLSPAN = 2 ><face="arial" size="12"><br><center>Estrangeiro</><br>
+		<td class="texto"><face="arial" size="12"><br><center>Estrangeiro</><br>
 			<%if(consulta.equals("Sim"))
 				{
 				%>
@@ -77,6 +79,9 @@ if(consulta.equals("Sim"))
 				<input type="radio" name="estrangeiro" id="estraS" value="Sim" disabled>Sim</>
 				<input type="radio" name="estrangeiro" id="estraN" value="Não" checked disabled>Não</>
 			<%} %>
+		</td>
+		<td><face size="12"><br><center>Locação</><br>
+			<INPUT TYPE="text" name="loc" VALUE="<%= loc%>" disabled></center>
 		</td>
 	</tr>
 	</table>
