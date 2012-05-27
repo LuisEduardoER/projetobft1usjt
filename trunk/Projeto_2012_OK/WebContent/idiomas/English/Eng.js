@@ -69,29 +69,28 @@ function pageEng()
 	this.condutor = "Conductor";
 	this.consultaloc = "Consult Lease";
 	this.codigo = "Code";
-	
-	this.cadastraloc = "Cadastrar Locacao";
-	this.clievei = "Cliente e Veiculo";
-	this.idcli = "ID Cliente";
-	this.tipo = "Tipo";
-	this.idvei = "ID Veiculo";
-	this.acessorio = "Acessorios:";
-	this.gps = "Navegador GPS";
-	this.bebe = "Cadeira de Bebe";
-	this.motorista = "Motorista";
-	this.tarifa = "Tipo Tarifa";
-	this.livre = "Km Livre";
-	this.controlado = "Km Controlado";
-	this.dadoscomp = "Dados Comlementares";
-	this.dataemp = "Data Emprestimo";
-	this.horaemp = "Hora Emprestimo";
-	this.localemp = "Local Emprestimo";
-	this.devprev = "Devolucao Prevista";
-	this.dataemp = "Data";
+	this.cadastraloc = "Register Lease";
+	this.clievei = "Customer and Vehicle";
+	this.idcli = "ID Customer";
+	this.tipo = "Type";
+	this.idvei = "ID Vehicle";
+	this.acessorio = "Accessories:";
+	this.gps = "GPS Navigator";
+	this.bebe = "Chair Baby";
+	this.motorista = "Driver";
+	this.tarifa = "Rate Type";
+	this.livre = "Free KM";
+	this.controlado = "Controlled KM";
+	this.dadoscomp = "Additional Data";
+	this.dataemp = "Date Loan";
+	this.horaemp = "Time Loan";
+	this.localemp = "Local Loan";
+	this.devprev = "Expected Return";
+	this.dataemp = "Date";
 	this.local = "Local";
-	this.registro = "Numero de Registro";
-	this.message8 = "Locacao efetuada com Sucesso!";
-	this.message9 = "Veiculo nao Encontrado!";
+	this.registro = "Registration Number";
+	this.message8 = "Lease made with Success!";
+	this.message9 = "Vehicle not Found!";
 }
 
 function pageChangeEn() 

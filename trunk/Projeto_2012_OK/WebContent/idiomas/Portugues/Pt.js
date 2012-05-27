@@ -69,7 +69,6 @@ function pagePt()
 	this.condutor = "Condutor";
 	this.consultaloc = "Consultar Locacao";
 	this.codigo = "Codigo";
-	
 	this.cadastraloc = "Cadastrar Locacao";
 	this.clievei = "Cliente e Veiculo";
 	this.idcli = "ID Cliente";

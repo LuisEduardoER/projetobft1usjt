@@ -69,29 +69,28 @@ function pageEs()
 	this.condutor = "Conductor";
 	this.consultaloc = "Consultar Ubicacion";
 	this.codigo = "Codigo";
-	
-	this.cadastraloc = "Cadastrar Locacao";
-	this.clievei = "Cliente e Veiculo";
+	this.cadastraloc = "Registro de Ubicacion";
+	this.clievei = "Cliente y Vehiculo";
 	this.idcli = "ID Cliente";
 	this.tipo = "Tipo";
-	this.idvei = "ID Veiculo";
-	this.acessorio = "Acessorios:";
+	this.idvei = "ID Vehiculo";
+	this.acessorio = "Accesorios:";
 	this.gps = "Navegador GPS";
-	this.bebe = "Cadeira de Bebe";
-	this.motorista = "Motorista";
-	this.tarifa = "Tipo Tarifa";
-	this.livre = "Km Livre";
+	this.bebe = "Silla de Bebe";
+	this.motorista = "Conductor";
+	this.tarifa = "Tipo de Tarifa";
+	this.livre = "Km Libre";
 	this.controlado = "Km Controlado";
-	this.dadoscomp = "Dados Comlementares";
-	this.dataemp = "Data Emprestimo";
-	this.horaemp = "Hora Emprestimo";
-	this.localemp = "Local Emprestimo";
-	this.devprev = "Devolucao Prevista";
-	this.dataemp = "Data";
+	this.dadoscomp = "Datos Adicionales";
+	this.dataemp = "Fecha del Prestamo";
+	this.horaemp = "Tiempo de Prestamo";
+	this.localemp = "Prestamo Local";
+	this.devprev = "Retorno Esperado";
+	this.dataemp = "Fecha";
 	this.local = "Local";
-	this.registro = "Numero de Registro";
-	this.message8 = "Locacao efetuada com Sucesso!";
-	this.message9 = "Veiculo nao Encontrado!";
+	this.registro = "Matricula";
+	this.message8 = "Ubicacion realizado con exito!";
+	this.message9 = "No se encontro al Vehiculo!";
 }
 
 function pageChangeEs() 
