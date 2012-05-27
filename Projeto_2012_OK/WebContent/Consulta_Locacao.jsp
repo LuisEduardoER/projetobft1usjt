@@ -26,19 +26,22 @@ function habilitaCampo(valor)
 	{
 		if (valor == "locacao")
 		{
-			document.getElementById('cpf').disabled = true;
+			document.getElementById('tipocli').disabled = true;
+			document.getElementById('cli').disabled = true;
 			document.getElementById('vei').disabled = true;
 			document.getElementById('loc').disabled = false;
         }
 		else if (valor == "cliente")
 		{
-			document.getElementById('cpf').disabled = false;
+			document.getElementById('tipocli').disabled = false;
+			document.getElementById('cli').disabled = false;
 			document.getElementById('loc').disabled = true;
 			document.getElementById('vei').disabled = true;
         }
 		else
 		{
-			document.getElementById('cpf').disabled = true;
+			document.getElementById('tipocli').disabled = true;
+			document.getElementById('cli').disabled = true;
 			document.getElementById('loc').disabled = true;
 			document.getElementById('vei').disabled = false;
         }
@@ -50,14 +53,19 @@ function habilitaCampo(valor)
 <body text="#000000" onload="<%=idi%>">
 
 
-<form name="form1" id="form1" action="Consulta_CliF_Banco.jsp?user=<%= user%>&agencia=<%=agencia%>&idi=<%= idi%>" method = "post">
+<form name="form1" id="form1" action="Consulta_Loc_Banco.jsp?user=<%= user%>&agencia=<%=agencia%>&idi=<%= idi%>" method = "post">
 
 	<h1><P align="center"><label data-bind="text: consultaloc"></label></h1></P>
 	<face="arial" size="12">
 	<table align="center" border=0>
 	<tr>
 		<td><center><input type="radio" name="consulta" id="locacao" value="locacao" onclick="habilitaCampo(this.value)"></></><label data-bind="text: loc"></label><br><br><label data-bind="text: codigo"></label></><br><input class="campo" TYPE="text" name="loc" id="loc" maxlength="20" disabled></td>
-		<td><center><input type="radio" name="consulta" id="cliente" value="cliente" onclick="habilitaCampo(this.value)"></></><label data-bind="text: cliente"></label><br><br><label data-bind="text: cpf"></label></><br><input class="campo" TYPE="text" name="cpf" id="cpf" maxlength="16" disabled></td>
+		<td><center><input type="radio" name="consulta" id="cliente" value="cliente" onclick="habilitaCampo(this.value)"></></><label data-bind="text: cliente"></label><br><br>
+			<center><SELECT NAME="tipocli" class="campo" id="tipocli" disabled>
+									<OPTION >PF
+									<OPTION >PJ
+									<OPTION >PE
+									</SELECT><br><input class="campo" TYPE="text" name="cli" id="cli" maxlength="20" disabled></td>
 		<td><center><input type="radio" name="consulta" id="veiculo" value="veiculo" onclick="habilitaCampo(this.value)"></></><label data-bind="text: veiculo"></label><br><br><label data-bind="text: codigo"></label></><br><input class="campo" TYPE="text" name="vei" id="vei" maxlength="20" disabled></td>
 	</tr>
 	</table>
