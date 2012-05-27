@@ -52,10 +52,9 @@ function pageEs()
 	this.consultapf = "Consulta al Cliente Persona Fisica";
 	this.brasileiro = "Brasileno";
 	this.message3 = "No se encontro al Cliente!!";
-	
-	this.dadosbasicos = "Dados Basicos";
-	this.message4 = "Cliente cadastrado com Sucesso!";
-	this.message5 = "Erro";
+	this.dadosbasicos = "Datos Basicos";
+	this.message4 = "Cliente registrado con Exito!";
+	this.message5 = "Errores";
 	
 }
 

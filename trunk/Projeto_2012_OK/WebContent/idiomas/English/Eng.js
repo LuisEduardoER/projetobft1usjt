@@ -52,10 +52,9 @@ function pageEng()
 	this.consultapf = "Consult Physical Person Customer";
 	this.brasileiro = "Brasilian";
 	this.message3 = "Customer not Found!!";
-	
-	this.dadosbasicos = "Dados Basicos";
-	this.message4 = "Cliente cadastrado com Sucesso!";
-	this.message5 = "Erro";
+	this.dadosbasicos = "Basic Data";
+	this.message4 = "Customer registered with Success!";
+	this.message5 = "Error";
 	
 }
 

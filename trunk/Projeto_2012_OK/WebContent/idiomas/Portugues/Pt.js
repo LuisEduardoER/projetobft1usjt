@@ -52,7 +52,6 @@ function pagePt()
 	this.consultapf = "Consulta Cliente Pessoa Fisica";
 	this.brasileiro = "Brasileiro";
 	this.message3 = "Cliente não Encontrado!!";
-	
 	this.dadosbasicos = "Dados Basicos";
 	this.message4 = "Cliente cadastrado com Sucesso!";
 	this.message5 = "Erro";
