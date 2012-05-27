@@ -103,9 +103,9 @@ function pageEs()
   	this.cidade = "Ciudad";
   	this.cor = "Color";
   	this.valores = "Valores";
-  	this.kmlivre = "KM Libre R$";
-  	this.kmcontrolado = "KM Controlado R$";
-  	this.diaria = "Diario";
+  	this.kmlivre = "KM Libre EUR";
+  	this.kmcontrolado = "KM Controlado EUR";
+  	this.diaria = "Diario EUR";
 }
 
 function pageChangeEs() 
