@@ -106,9 +106,8 @@ function pageEng()
   	this.kmlivre = "Free KM US$";
   	this.kmcontrolado = "Controlled KM US$";
   	this.diaria = "Daily US$";
-  	
-  	this.message11 = "Veículo cadastrado com Sucesso!";
-  	this.editapj = "Editar Pessoa Juridica";
+  	this.message11 = "Vehicle registrated with Success!";
+  	this.editapj = "Edit Juridical Person";
 }
 
 function pageChangeEn() 

@@ -106,7 +106,6 @@ function pagePt()
   	this.kmlivre = "KM Livre R$";
   	this.kmcontrolado = "KM Controlado R$";
   	this.diaria = "Diaria R$";
-  	
   	this.message11 = "Veículo cadastrado com Sucesso!";
   	this.editapj = "Editar Pessoa Juridica";
 }
