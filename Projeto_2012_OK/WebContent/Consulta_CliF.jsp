@@ -133,7 +133,7 @@ else
 
 
 
-<form name="form1" id="form1" action = "Menu_Principal.jsp?user=<%= user%>&agencia=<%=agencia%>" method = "post">	
+<form name="form1" id="form1" action = "Menu_Principal.jsp?user=<%= user%>&agencia=<%=agencia%>&idi=<%= idi%>" method = "post">	
 
 
 	<h1><P align="center"><label data-bind="text: consultapf"></label></h1></P>
