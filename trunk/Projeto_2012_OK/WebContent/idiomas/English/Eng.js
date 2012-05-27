@@ -103,9 +103,9 @@ function pageEng()
   	this.cidade = "City";
   	this.cor = "Color";
   	this.valores = "Values";
-  	this.kmlivre = "Free KM R$";
-  	this.kmcontrolado = "Controlled KM R$";
-  	this.diaria = "Daily";
+  	this.kmlivre = "Free KM US$";
+  	this.kmcontrolado = "Controlled KM US$";
+  	this.diaria = "Daily US$";
 }
 
 function pageChangeEn() 
