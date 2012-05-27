@@ -131,7 +131,7 @@ function habilitaCampo(valor)
 	</tr>
 	<tr>
 		<td><center><face="arial" size="12"><label data-bind="text: codloc"></label></td>
-		<td><INPUT TYPE="text" name="registro" VALUE="<%=registro%>" disabled></td>
+		<td><INPUT TYPE="text" name="registro" VALUE="<%=registro%>" ></td>
 	</tr>
 	</table>
 	
