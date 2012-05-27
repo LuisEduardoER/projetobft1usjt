@@ -58,6 +58,7 @@ function pageEng()
 	this.editapf = "Edit Physical Person";
 	this.message6 = "Customer edited with Success!";
 	
+	this.delpf = "Excluir Pessoa Fisica";
 }
 
 function pageChangeEn() 

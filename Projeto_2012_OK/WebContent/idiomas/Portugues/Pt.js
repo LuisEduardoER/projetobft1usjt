@@ -59,7 +59,6 @@ function pagePt()
 	this.message6 = "Cliente Alterado com Sucesso!";
 	
 	this.delpf = "Excluir Pessoa Fisica";
-	
 }
 
 function pageChangePt() 

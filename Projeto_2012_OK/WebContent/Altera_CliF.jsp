@@ -39,7 +39,7 @@
 if(consulta.equals("Sim"))
 	{
 %>
-<form name="form1" id="form1" action = "Altera_CliF_Banco2.jsp?user=<%= user%>&agencia=<%=agencia%>&estrangeiro=<%=consulta%>&cpf=<%=cpf%>&pass=<%=pass%>&idi=<%=idi%>" method = "post">	
+<form name="form1" id="form1" action = "Altera_CliF_Banco2.jsp?user=<%= user%>&agencia=<%=agencia%>&estrangeiro=<%=consulta%>&cpf=<%=cpf%>&pass=<%=pass%>&idi=<%=idi%>&loc=<%=loc%>" method = "post">	
 
 
 	<h1><P align="center"><label data-bind="text: editapf"></label></h1></P>
@@ -129,7 +129,7 @@ if(consulta.equals("Sim"))
 else
 {%>
 
-<form name="form1" id="form1" action = "Altera_CliF_Banco2.jsp?user=<%= user%>&agencia=<%=agencia%>&estrangeiro=<%=consulta%>&cpf=<%=cpf%>&pass=<%=pass%>&idi=<%=idi%>" method = "post">	
+<form name="form1" id="form1" action = "Altera_CliF_Banco2.jsp?user=<%= user%>&agencia=<%=agencia%>&estrangeiro=<%=consulta%>&cpf=<%=cpf%>&pass=<%=pass%>&idi=<%=idi%>&loc=<%=loc%>" method = "post">	
 
 
 	<h1><P align="center"><label data-bind="text: editapf"></label></h1></P>
