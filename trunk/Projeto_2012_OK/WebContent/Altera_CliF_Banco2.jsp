@@ -25,6 +25,7 @@
 	String pass = request.getParameter("pass");
 	String cpf = request.getParameter("cpf");
 	String rg = request.getParameter("rg");
+	String loc = request.getParameter("loc");
 	String nada= "";
 	
 	try{
@@ -43,7 +44,7 @@
 			String sql1  = "delete from cliente where passaporte='"+pass+"'";
 			String sql2 = "insert into cliente (cpf,passaporte,cnpj,telefone,email) values ('"+nada+"','"+pass+"','"+nada+"','"+fone+"','"+email+"')";
 			String sql3 = "delete from cliente_es where passaporte='"+pass+"'";
-			String sql4 = "insert into cliente_es (passaporte,habilitacao,categoriacnh,estemiscnh,dataemiscnh,validadecnh,datanasc,sexo,nome,loc) values ('"+pass+"','"+cnh+"','"+catcnh+"','"+estadocnh+"','"+emiscnh+"','"+valcnh+"','"+datanasc+"','"+sexo+"','"+nome+"','Não')";
+			String sql4 = "insert into cliente_es (passaporte,habilitacao,categoriacnh,estemiscnh,dataemiscnh,validadecnh,datanasc,sexo,nome,loc) values ('"+pass+"','"+cnh+"','"+catcnh+"','"+estadocnh+"','"+emiscnh+"','"+valcnh+"','"+datanasc+"','"+sexo+"','"+nome+"','"+loc+"')";
 			stm = connection.createStatement();
 			stm.executeUpdate(sql1);
 			stm.executeUpdate(sql2);
@@ -55,7 +56,7 @@
 			String sql1  = "delete from cliente where cpf='"+cpf+"'";
 			String sql2 = "insert into cliente (cpf,passaporte,cnpj,telefone,email) values ('"+cpf+"','"+nada+"','"+nada+"','"+fone+"','"+email+"')";
 			String sql3  = "delete from cliente_pf where cpf='"+cpf+"'";
-			String sql4 = "insert into cliente_pf (cpf,rg,habilitacao,categoriacnh,estemiscnh,dataemiscnh,validadecnh,datanasc,sexo,nome,loc) values ('"+cpf+"','"+rg+"','"+cnh+"','"+catcnh+"','"+estadocnh+"','"+emiscnh+"','"+valcnh+"','"+datanasc+"','"+sexo+"','"+nome+"','Não')";
+			String sql4 = "insert into cliente_pf (cpf,rg,habilitacao,categoriacnh,estemiscnh,dataemiscnh,validadecnh,datanasc,sexo,nome,loc) values ('"+cpf+"','"+rg+"','"+cnh+"','"+catcnh+"','"+estadocnh+"','"+emiscnh+"','"+valcnh+"','"+datanasc+"','"+sexo+"','"+nome+"','"+loc+"')";
 			stm = connection.createStatement();
 			stm.executeUpdate(sql1);
 			stm.executeUpdate(sql2);

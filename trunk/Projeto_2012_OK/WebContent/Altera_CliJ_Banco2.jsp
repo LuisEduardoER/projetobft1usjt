@@ -24,7 +24,8 @@
 	String cpf = request.getParameter("cpf");
 	String cnpj = request.getParameter("cnpj");
 	String rg = request.getParameter("rg");
-	String nada= "";
+	String nada = "";
+	String loc = request.getParameter("loc");
 	
 	try{
 	
