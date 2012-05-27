@@ -109,6 +109,8 @@ function pageEng()
   	this.message11 = "Vehicle registrated with Success!";
   	this.editapj = "Edit Juridical Person";
   	this.delpj = "Delete Juridical Person";
+  	this.consultavei = "Consult Vehicle";
+  	this.sit = "Situation";  
 }
 
 function pageChangeEn() 

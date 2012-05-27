@@ -109,6 +109,8 @@ function pageEs()
   	this.message11 = "Vehiculo registrado con Exito!";
   	this.editapj = "Cambiar Persona Juridica";
   	this.delpj = "Borrar Persona Juridica";
+  	this.consultavei = "Consulta del Vehiculo";
+  	this.sit = "Situacion";  
 }
 
 function pageChangeEs() 
