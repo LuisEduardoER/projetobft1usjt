@@ -20,7 +20,6 @@
 	String grupo1 = request.getParameter("grupo2");
 	String fabricante1 = request.getParameter("fabricante2");
 	
-	
 try{
 	
 	Class.forName("org.postgresql.Driver");
