@@ -55,7 +55,6 @@ function pagePt()
 	this.dadosbasicos = "Dados Basicos";
 	this.message4 = "Cliente cadastrado com Sucesso!";
 	this.message5 = "Erro";
-	
 	this.editapf = "Editar Pessoa Fisica";
 	this.message6 = "Cliente Alterado com Sucesso!";
 	
