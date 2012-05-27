@@ -108,6 +108,8 @@ function pageEng()
   	this.diaria = "Daily US$";
   	this.message11 = "Vehicle registrated with Success!";
   	this.editapj = "Edit Juridical Person";
+  	
+  	this.delpj = "Excluir Pessoa Juridica";
 }
 
 function pageChangeEn() 

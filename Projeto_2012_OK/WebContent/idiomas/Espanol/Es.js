@@ -108,6 +108,8 @@ function pageEs()
   	this.diaria = "Diario ¢";
   	this.message11 = "Vehiculo registrado con Exito!";
   	this.editapj = "Cambiar Persona Juridica";
+  	
+  	this.delpj = "Excluir Pessoa Juridica";
 }
 
 function pageChangeEs() 
