@@ -60,8 +60,8 @@
 	
 		connection.close();
 	
-		javax.swing.JOptionPane.showMessageDialog(null,"Veículo Alterado com Sucesso!");
-		response.sendRedirect("Menu_Principal.jsp?user="+user+"&agencia="+agencia);
+		javax.swing.JOptionPane.showMessageDialog(null,"Message12");
+		response.sendRedirect("Menu_Principal.jsp?user="+user+"&agencia="+agencia+"&idi="+idi);
 		} 
 		catch (ClassNotFoundException e) 
 		{

@@ -115,6 +115,8 @@ function pageEng()
   	this.delvei = "Delete Vehicle";
   	this.message12 = "Vehicle Modified with Success";
   	this.message13 = "Vehicle Deleted with Success";
+  	
+  	this.delvei2 = "Deseja Excluir Esse Veículo ?";
 }
 
 function pageChangeEn() 
