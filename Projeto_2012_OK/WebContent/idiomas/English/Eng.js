@@ -57,10 +57,9 @@ function pageEng()
 	this.message5 = "Error";
 	this.editapf = "Edit Physical Person";
 	this.message6 = "Customer edited with Success!";
-	
-	this.delpf = "Excluir Pessoa Fisica";
-	this.delcli = "Deseja Excluir Esse Cliente ?";
-	this.message7 = "Cliente Excluído com Sucesso!";
+	this.delpf = "Delete Physical Person";
+	this.delcli = "Do you want to delete this customer?";
+	this.message7 = "Customer deleted with Success!";
 }
 
 function pageChangeEn() 

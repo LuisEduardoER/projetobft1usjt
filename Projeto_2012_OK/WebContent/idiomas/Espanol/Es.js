@@ -57,10 +57,9 @@ function pageEs()
 	this.message5 = "Errores";
 	this.editapf = "Cambiar Persona Fisica";
 	this.message6 = "Cliente modificado con exito!";
-	
-	this.delpf = "Excluir Pessoa Fisica";
-	this.delcli = "Deseja Excluir Esse Cliente ?";
-	this.message7 = "Cliente Excluído com Sucesso!";
+	this.delpf = "Borrar Persona Fisica";
+	this.delcli = "Quieres eliminar este cliente?";
+	this.message7 = "Cliente borrado con Exito!";
 }
 
 function pageChangeEs() 
