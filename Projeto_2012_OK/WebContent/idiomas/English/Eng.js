@@ -91,6 +91,35 @@ function pageEng()
 	this.codloc = "Registration Number";
 	this.message8 = "Lease made with Success!";
 	this.message9 = "Vehicle not Found!";
+	
+	this.message10 = "Valor Invalido!";
+	this.cadastravei = "Cadastro de Veiculo";
+	this.fabricante = "Fabricante";
+	this.modelo = "Modelo";
+	this.chassi = "Chassi";
+	this.placa = "Placa";
+	this.km = "Km";
+	this.grupo = "Grupo";
+	this.a = "A-Economico";
+  	this.c = "C-Economico com Ar";
+  	this.f = "F-Intermediario";
+  	this.g = "G-Intermediario Wagon Especial";
+  	this.h = "H-Executivo";
+  	this.i = "I-Utilitario";
+  	this.k = "K-Executivo Luxo";
+  	this.m = "M-Intermediario Wagon";
+  	this.n = "N-Pick-up";
+  	this.p = "P-4X4 Especial";
+  	this.r = "R-Minivan";
+  	this.u = "U-Furgao";
+  	this.y = "Y-Blindado";
+  	this.estado = "Estado";
+  	this.cidade = "Cidade";
+  	this.cor = "Cor";
+  	this.valores = "Valores";
+  	this.kmlivre = "Km Livre R$";
+  	this.kmcontrolado = "Km Controlado R$";
+  	this.diaria = "Diaria";
 }
 
 function pageChangeEn() 
