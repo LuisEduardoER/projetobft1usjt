@@ -56,6 +56,9 @@ function pageEs()
 	this.message4 = "Cliente registrado con Exito!";
 	this.message5 = "Errores";
 	
+	this.editapf = "Editar Pessoa Fisica";
+	this.message6 = "Cliente Alterado com Sucesso!";
+	
 }
 
 function pageChangeEs() 
