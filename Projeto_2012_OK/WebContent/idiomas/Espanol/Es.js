@@ -103,9 +103,9 @@ function pageEs()
   	this.cidade = "Ciudad";
   	this.cor = "Color";
   	this.valores = "Valores";
-  	this.kmlivre = "KM Libre ¢";
-  	this.kmcontrolado = "KM Controlado ¢";
-  	this.diaria = "Diario ¢";
+  	this.kmlivre = "KM Libre EUR";
+  	this.kmcontrolado = "KM Controlado EUR";
+  	this.diaria = "Diario EUR";
   	this.message11 = "Vehiculo registrado con Exito!";
   	this.editapj = "Cambiar Persona Juridica";
   	this.delpj = "Borrar Persona Juridica";
