@@ -71,7 +71,7 @@
 	<tr>
 		<td><face="arial" size="12"><center><label data-bind="text: emiscnh"></label></><br><INPUT TYPE="text" name="dataemcnh" id="dataemcnh" maxlength="10" value=<%= emiscnh%> disabled></center></td>
 		<td><face="arial" size="12"><center><label data-bind="text: valcnh"></label></><br><INPUT TYPE="text" name="datavalcnh" id="datavalcnh" maxlength="10" value=<%= valcnh%> disabled></center></td>
-		<td><face size="12"><br><center><label data-bind="text: loc"></label></><br><INPUT TYPE="text" name="loc" VALUE="<%= loc%>" disabled></center></td>
+		<td><face="arial" size="12"><center><label data-bind="text: loc"></label></><br><INPUT TYPE="text" name="loc" VALUE="<%= loc%>" disabled></center></td>
 	</tr>
 	</table>
 	
