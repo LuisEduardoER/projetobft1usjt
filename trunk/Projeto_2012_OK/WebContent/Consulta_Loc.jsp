@@ -11,7 +11,6 @@
 	String agencia = request.getParameter("agencia");
 	String idi = request.getParameter("idi");
 	String codloc= ""+request.getParameter("codloc");
-	
 	String cpf = request.getParameter("cpf");
 	String pass = request.getParameter("pass");
 	String cnpj = request.getParameter("cnpj");
@@ -27,6 +26,7 @@
 	String motorista = request.getParameter("motorista");
 	String tipotarifa = request.getParameter("tipotarifa");
 	String sitloc = request.getParameter("sitloc");
+	
 %>    
     
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -56,7 +56,7 @@
 	</tr>
 	<tr>
 		<%
-			if(cpf != null)	
+			if(cnpj.equals("") && pass.equals(""))	
 			{
 			%>
 			<td><center><INPUT TYPE="text" name="idcli" VALUE="<%=cpf%>" disabled>&nbsp&nbsp<img src= "imagens/lupa.png" width=18 height=18></center></td>
@@ -68,7 +68,7 @@
 									</SELECT></td>
 			<%
 			}
-			else if(cnpj != null)
+			else if(cpf.equals("") && pass.equals(""))
 			{
 			%>
 			<td><center><INPUT TYPE="text" name="idcli" VALUE="<%=cnpj%>" disabled>&nbsp&nbsp<img src= "imagens/lupa.png" width=18 height=18></center></td>
@@ -80,7 +80,7 @@
 									</SELECT></td>
 			<%
 			}
-			else if(pass != null)
+			else if(cnpj.equals("") && cpf.equals(""))
 			{
 			%>
 			<td><center><INPUT TYPE="text" name="idcli" VALUE="<%=pass%>" disabled>&nbsp&nbsp<img src= "imagens/lupa.png" width=18 height=18></center></td>

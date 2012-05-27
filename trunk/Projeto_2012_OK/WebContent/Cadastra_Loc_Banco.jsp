@@ -23,7 +23,6 @@
 	String agencialoc = request.getParameter("agencialoc");
 	String datadev = request.getParameter("datadev");
 	String agenciadev = request.getParameter("agenciadev");
-	String horadev = request.getParameter("horadev");
 	String registro = request.getParameter("registro");
 	String sitloc = "Ativa";
 	String cpf = "";
@@ -76,7 +75,7 @@
 		if(rs1.next())
 		{
 			kmini = ""+rs1.getInt("km");
-			sql3 = "UPDATE veiculo SET sitvei='Indisponível' WHERE codigo= '"+idvei+"'";
+			sql3 = "UPDATE veiculo SET sitvei='Indisponível' WHERE codigo= "+idvei+"";
 		}
 		else
 		{
