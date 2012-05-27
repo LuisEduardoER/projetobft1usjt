@@ -105,10 +105,10 @@ function pagePt()
   	this.valores = "Valores";
   	this.kmlivre = "KM Livre R$";
   	this.kmcontrolado = "KM Controlado R$";
-  	this.diaria = "Diaria";
+  	this.diaria = "Diaria R$";
   	
   	this.message11 = "Veículo cadastrado com Sucesso!";
-  	
+  	this.editapj = "Editar Pessoa Juridica";
 }
 
 function pageChangePt() 

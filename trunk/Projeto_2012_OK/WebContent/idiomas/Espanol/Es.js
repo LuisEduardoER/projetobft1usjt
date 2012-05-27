@@ -103,9 +103,12 @@ function pageEs()
   	this.cidade = "Ciudad";
   	this.cor = "Color";
   	this.valores = "Valores";
-  	this.kmlivre = "KM Libre EUR";
-  	this.kmcontrolado = "KM Controlado EUR";
-  	this.diaria = "Diario EUR";
+  	this.kmlivre = "KM Libre ¢";
+  	this.kmcontrolado = "KM Controlado ¢";
+  	this.diaria = "Diario ¢";
+  	
+  	this.message11 = "Veículo cadastrado com Sucesso!";
+  	this.editapj = "Editar Pessoa Juridica";
 }
 
 function pageChangeEs() 
