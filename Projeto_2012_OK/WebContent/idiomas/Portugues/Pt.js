@@ -60,7 +60,6 @@ function pagePt()
 	this.delpf = "Excluir Pessoa Fisica";
 	this.delcli = "Deseja Excluir Esse Cliente ?";
 	this.message7 = "Cliente Excluído com Sucesso!";
-	
 	this.cadastropj = "Cadastro de Pessoa Juridica";
 	this.nomefant = "Nome Fantasia";
 	this.razao = "Razao Social";
