@@ -110,8 +110,7 @@ function pagePt()
   	this.editapj = "Editar Pessoa Juridica";
   	this.delpj = "Excluir Pessoa Juridica";  	
   	this.consultavei = "Consulta de Veiculo";
-  	this.sit = "Situacao";  
-  	
+  	this.sit = "Situacao";   	
   	this.editavei = "Editar Veiculo";
   	this.delvei = "Excluir Veiculo";
   	this.message12 = "Veiculo Alterado com Sucesso";
