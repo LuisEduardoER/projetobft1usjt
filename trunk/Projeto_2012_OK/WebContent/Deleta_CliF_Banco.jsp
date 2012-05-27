@@ -10,6 +10,7 @@
 <%
 
 	String user = request.getParameter("user");
+	String idi = request.getParameter("idi");
 	String agencia = request.getParameter("agencia");
 	String consulta = request.getParameter("consulta");
 	String passaporte1 = request.getParameter("pass");
@@ -27,6 +28,7 @@
 	String nasc = "";
 	String sexo = "";
 	String nome = "";
+	String loc = "";
 	
 try{
 	
@@ -61,10 +63,16 @@ try{
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+
+	<script src="idiomas\Portugues\Pt.js" type="text/javascript"></script>
+    <script src="idiomas\English\Eng.js" type="text/javascript"></script>
+    <script src="idiomas\Espanol\Es.js" type="text/javascript"></script>
+    <script src="idiomas\knockout-2.0.0.js" type="text/javascript"></script>
+
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title></title>
 </head>
-<body>
+<body text="#000000" onload="<%=idi%>">
 
 <%
 
@@ -87,7 +95,7 @@ if(rs1.next())
 }
 else
 {
-	javax.swing.JOptionPane.showMessageDialog(null,"Cliente não Encontrado!!");
+	javax.swing.JOptionPane.showMessageDialog(null,"Message3");
 }
 
 if(rs2.next())
@@ -102,6 +110,7 @@ if(rs2.next())
 		nasc = rs2.getString("datanasc");
 		sexo = rs2.getString("sexo");
 		nome = rs2.getString("nome");
+		loc = rs2.getString("loc");
 	}
 	
 	else
@@ -115,15 +124,16 @@ if(rs2.next())
 		nasc = rs2.getString("datanasc");
 		sexo = rs2.getString("sexo");
 		nome = rs2.getString("nome");
+		loc = rs2.getString("loc");
 	}
 	
 	response.sendRedirect("Deleta_CliF.jsp?user="+user+"&agencia="+agencia+"&consulta="+consulta+"&cpf="+cpf+"&rg="+rg+"&pass="+passaporte+"&fone="+fone+
 			"&email="+email+"&cnh="+cnh+"&catcnh="+catcnh+"&estadocnh="+estadocnh+"&datacnh="+datacnh+"&valcnh="+valcnh+"&nasc="+nasc+
-			"&sexo="+sexo+"&nome="+nome);
+			"&sexo="+sexo+"&nome="+nome+"&loc="+loc+"&idi="+idi);
 }
 else
 {
-	response.sendRedirect("Altera_ClienteF.jsp?user="+user+"&agencia="+agencia);
+	response.sendRedirect("Deleta_ClienteF.jsp?user="+user+"&agencia="+agencia+"&idi="+idi);
 }
 
 connection.close();
