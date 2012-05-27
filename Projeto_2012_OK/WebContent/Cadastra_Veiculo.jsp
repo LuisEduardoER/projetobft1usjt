@@ -48,20 +48,21 @@
 	<tr>
 		<td COLSPAN = 2 ><face="arial" size="12"><center><label data-bind="text: placa"></label></><br> <INPUT TYPE="text" name="placa" VALUE=""></center></td> 
 		<td COLSPAN = 2 ><face="arial" size="12"><center><label data-bind="text: km"></label></><br> <INPUT TYPE="text" name="km" VALUE=""></center></td>
-		<td COLSPAN = 2 ><face="arial" size="12"><center><label data-bind="text: grupo"></label></><br>  <SELECT NAME="grupo">
-							  	<OPTION ><label data-bind="text: a"></label>
-							  	<OPTION ><label data-bind="text: c"></label>
-							  	<OPTION ><label data-bind="text: f"></label>
-							  	<OPTION ><label data-bind="text: g"></label>
-							  	<OPTION ><label data-bind="text: h"></label>
-							  	<OPTION ><label data-bind="text: i"></label>
-							  	<OPTION ><label data-bind="text: k"></label>
-							  	<OPTION ><label data-bind="text: m"></label>
-							  	<OPTION ><label data-bind="text: n"></label>
-							  	<OPTION ><label data-bind="text: p"></label>
-							  	<OPTION ><label data-bind="text: r"></label>
-							  	<OPTION ><label data-bind="text: u"></label>
-							  	<OPTION ><label data-bind="text: y"></label>
+		<td COLSPAN = 2 ><face="arial" size="12"><center><label data-bind="text: grupo"></label></><br>  
+		<SELECT NAME="grupo">
+							  	<OPTION >A-Economico
+							  	<OPTION >C-Economico com Ar
+							  	<OPTION >F-Intermediario
+							  	<OPTION >G-Intermediario Wagon Especial
+							  	<OPTION >H-Executivo
+							  	<OPTION >I-Utilitario
+							  	<OPTION >K-Executivo Luxo
+							  	<OPTION >M-Intermediario Wagon
+							  	<OPTION >N-Pick-up
+							  	<OPTION >P-4X4 Especial
+							  	<OPTION >R-Minivan
+							  	<OPTION >U-Furgao
+							  	<OPTION >Y-Blindado
 								</SELECT></center></td>
 	</tr>
 	<TR></TR>

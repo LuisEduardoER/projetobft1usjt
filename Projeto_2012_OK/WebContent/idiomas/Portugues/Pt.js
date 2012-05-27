@@ -99,13 +99,16 @@ function pagePt()
 	this.placa = "Placa";
 	this.km = "KM";
 	this.grupo = "Grupo";
-  	this.estado = "Estado";
+	this.estado = "Estado";
   	this.cidade = "Cidade";
   	this.cor = "Cor";
   	this.valores = "Valores";
   	this.kmlivre = "KM Livre R$";
   	this.kmcontrolado = "KM Controlado R$";
   	this.diaria = "Diaria";
+  	
+  	this.message11 = "Veículo cadastrado com Sucesso!";
+  	
 }
 
 function pageChangePt() 
