@@ -60,14 +60,13 @@ function pageEs()
 	this.delpf = "Borrar Persona Fisica";
 	this.delcli = "Quieres eliminar este cliente?";
 	this.message7 = "Cliente borrado con Exito!";
-	
-	this.cadastropj = "Cadastro de Pessoa Juridica";
-	this.nomefant = "Nome Fantasia";
-	this.razao = "Razao Social";
+	this.cadastropj = "Registro de Persona Juridica";
+	this.nomefant = "Nombre fantasia";
+	this.razao = "Razón social";
 	this.cnpj = "CNPJ";
-	this.inscri = "Inscricao Estadual";
-	this.consultapj = "Consulta Cliente Pessoa Juridica";
-	this.condutor = "Condutor";
+	this.inscri = "Registro de Estado";
+	this.consultapj = "Consulta al Cliente Persona Juridica";
+	this.condutor = "Conductor";
 }
 
 function pageChangeEs() 
