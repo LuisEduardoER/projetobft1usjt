@@ -66,7 +66,6 @@ function habilitaCampo(valor)
 	</tr>
 	<tr>
 		<td><face="arial" size="12"><center><label data-bind="text: idvei"></label></center></td>
-		<td><face="arial" size="12"><center><label data-bind="text: tipo"></label></center></td>
 	</tr>
 	<tr>
 		<td><center><INPUT TYPE="text" name="idvei" VALUE="">&nbsp&nbsp<img src= "imagens/lupa.png" width=18 height=18></center></td>

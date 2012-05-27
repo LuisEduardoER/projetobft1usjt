@@ -91,6 +91,8 @@ function pagePt()
 	this.registro = "Numero de Registro";
 	this.message8 = "Locacao efetuada com Sucesso!";
 	this.message9 = "Veiculo nao Encontrado!";
+	
+	
 }
 
 function pageChangePt() 

@@ -12,12 +12,12 @@
 	String user = request.getParameter("user");
 	String agencia = request.getParameter("agencia");
 	String idi = request.getParameter("idi");
-	String consulta = request.getParameter("consulta");
+	String consulta = request.getParameter("con");
 	String tipocli = request.getParameter("tipocli");
 	String cli = request.getParameter("cli");
 	String loc = request.getParameter("loc");
 	String vei = request.getParameter("vei");
-
+	
 try{
 	
 	Class.forName("org.postgresql.Driver");
@@ -29,7 +29,7 @@ try{
 
 	String sql = "";
 	
-	if(consulta.equals("Locacao"))
+	if(consulta.equals("locacao"))
 	{
 		sql = "select * from locacao where codlocacao = '"+loc+"'";
 	}
@@ -48,11 +48,11 @@ try{
 			sql = "select * from locacao where passaporte ILIKE '"+cli+"'";
 		}
 	}
-	else if(consulta.equals("Veiculo"))
+	else if(consulta.equals("veiculo"))
 	{
 		sql = "select * from locacao where codveiculo '"+vei+"'";
 	}
-	
+	//sql = "select * from locacao where codlocacao = '"+loc+"'";
 	Statement stm = connection.createStatement();
 	ResultSet rs1 = stm.executeQuery(sql);
 %>
