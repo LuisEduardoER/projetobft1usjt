@@ -115,6 +115,8 @@ function pageEs()
   	this.delvei = "Eliminar Vehiculo";
   	this.message12 = "Vehiculo Modificado con Exito";
   	this.message13 = "Vehiculo Eliminado con Exito";
+  	
+  	this.delvei2 = "Deseja Excluir Esse Veículo ?";
 }
 
 function pageChangeEs() 
