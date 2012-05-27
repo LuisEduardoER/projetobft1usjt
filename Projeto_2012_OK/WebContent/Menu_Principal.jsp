@@ -79,7 +79,7 @@
           <li><a class="MenuBarItemSubmenu" href="#"><center><label data-bind="text: loc"></label></center></a>
             <ul>
               <li><a href="Cadastra_Locacao.jsp?user=<%= user %>&agencia=<%=agencia%>&idi=<%=idi%>"><label data-bind="text: cadastra"></label></a></li>
-              <li><a href="#"><label data-bind="text: consulta"></label></a></li>
+              <li><a href="Consulta_Locacao.jsp?user=<%= user %>&agencia=<%=agencia%>&idi=<%=idi%>"><label data-bind="text: consulta"></label></a></li>
               <li><a href="#"><label data-bind="text: finaliza"></label></a></li>
             </ul>
           </li>
