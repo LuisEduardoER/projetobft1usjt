@@ -69,6 +69,29 @@ function pageEs()
 	this.condutor = "Conductor";
 	this.consultaloc = "Consultar Ubicacion";
 	this.codigo = "Codigo";
+	
+	this.cadastraloc = "Cadastrar Locacao";
+	this.clievei = "Cliente e Veiculo";
+	this.idcli = "ID Cliente";
+	this.tipo = "Tipo";
+	this.idvei = "ID Veiculo";
+	this.acessorio = "Acessorios:";
+	this.gps = "Navegador GPS";
+	this.bebe = "Cadeira de Bebe";
+	this.motorista = "Motorista";
+	this.tarifa = "Tipo Tarifa";
+	this.livre = "Km Livre";
+	this.controlado = "Km Controlado";
+	this.dadoscomp = "Dados Comlementares";
+	this.dataemp = "Data Emprestimo";
+	this.horaemp = "Hora Emprestimo";
+	this.localemp = "Local Emprestimo";
+	this.devprev = "Devolucao Prevista";
+	this.dataemp = "Data";
+	this.local = "Local";
+	this.registro = "Numero de Registro";
+	this.message8 = "Locacao efetuada com Sucesso!";
+	this.message9 = "Veiculo nao Encontrado!";
 }
 
 function pageChangeEs() 
