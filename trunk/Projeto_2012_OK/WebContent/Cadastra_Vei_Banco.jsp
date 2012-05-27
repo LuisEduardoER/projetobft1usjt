@@ -9,6 +9,7 @@
     
 <%
 	String user = request.getParameter("user");
+	String idi = request.getParameter("idi");
 	String agencia = request.getParameter("agencia");
 	String cor = request.getParameter("cor");
 	String chassi = request.getParameter("chassi");
@@ -60,20 +61,26 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+
+	<script src="idiomas\Portugues\Pt.js" type="text/javascript"></script>
+    <script src="idiomas\English\Eng.js" type="text/javascript"></script>
+    <script src="idiomas\Espanol\Es.js" type="text/javascript"></script>
+    <script src="idiomas\knockout-2.0.0.js" type="text/javascript"></script>
+
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title></title>
 </head>
-<body>
+<body text="#000000" onload="<%=idi%>">
 <%
 	
 		connection.close();
 	
-		javax.swing.JOptionPane.showMessageDialog(null,"Veículo cadastrado com Sucesso!");
-		response.sendRedirect("Consulta_Vei_Banco.jsp?user="+user+"&agencia="+agencia+"&consulta=codigo&codigo="+codigo);
+		javax.swing.JOptionPane.showMessageDialog(null,"Message11");
+		response.sendRedirect("Consulta_Vei_Banco.jsp?user="+user+"&agencia="+agencia+"&idi="+idi+"&consulta=codigo&codigo="+codigo);
 		} 
 		catch (ClassNotFoundException e) 
 		{
-			javax.swing.JOptionPane.showMessageDialog(null,"Erro no Cadastro!");
+			javax.swing.JOptionPane.showMessageDialog(null,"Message5");
 			%>
 				<script>javascript:history.back();</script>
 			<%
@@ -81,7 +88,7 @@
 		}
 		catch(SQLException e)
 		{
-			javax.swing.JOptionPane.showMessageDialog(null,"Erro no Cadastro!");
+			javax.swing.JOptionPane.showMessageDialog(null,"Message5");
 			%>
 				<script>javascript:history.back();</script>
 			<%
