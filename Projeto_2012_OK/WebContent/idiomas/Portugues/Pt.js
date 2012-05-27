@@ -60,6 +60,14 @@ function pagePt()
 	this.delpf = "Excluir Pessoa Fisica";
 	this.delcli = "Deseja Excluir Esse Cliente ?";
 	this.message7 = "Cliente Excluído com Sucesso!";
+	
+	this.cadastropj = "Cadastro de Pessoa Juridica";
+	this.nomefant = "Nome Fantasia";
+	this.razao = "Razao Social";
+	this.cnpj = "CNPJ";
+	this.inscri = "Inscricao Estadual";
+	this.consultapj = "Consulta Cliente Pessoa Juridica";
+	this.condutor = "Condutor";
 }
 
 function pageChangePt() 
