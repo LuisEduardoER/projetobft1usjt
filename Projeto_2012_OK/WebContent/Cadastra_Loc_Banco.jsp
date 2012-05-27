@@ -9,6 +9,7 @@
     
 <%
 	String user = request.getParameter("user");
+	String idi = request.getParameter("idi");
 	String agencia = request.getParameter("agencia");
 	String idcli = request.getParameter("idcli");
 	String tipocli = request.getParameter("tipocli");
@@ -79,7 +80,7 @@
 		}
 		else
 		{
-			javax.swing.JOptionPane.showMessageDialog(null,"Veiculo não Encontrado!!");
+			javax.swing.JOptionPane.showMessageDialog(null,"Message9");
 			%>
 			<script>javascript:history.back();</script>
 			<%
@@ -97,7 +98,7 @@
 			}
 			else
 			{
-				javax.swing.JOptionPane.showMessageDialog(null,"Cliente não Encontrado!!");
+				javax.swing.JOptionPane.showMessageDialog(null,"Message3");
 				%>
 				<script>javascript:history.back();</script>
 				<%
@@ -116,7 +117,7 @@
 			}
 			else
 			{
-				javax.swing.JOptionPane.showMessageDialog(null,"Cliente não Encontrado!!");
+				javax.swing.JOptionPane.showMessageDialog(null,"Message3");
 				%>
 				<script>javascript:history.back();</script>
 				<%
@@ -135,17 +136,13 @@
 			}
 			else
 			{
-				javax.swing.JOptionPane.showMessageDialog(null,"Cliente não Encontrado!!");
+				javax.swing.JOptionPane.showMessageDialog(null,"Message3");
 				%>
 				<script>javascript:history.back();</script>
 				<%
 			}
 			sql2 = "UPDATE cliente_es SET loc='Sim' WHERE passaporte ILIKE '"+idcli+"'";
 		}
-		
-		javax.swing.JOptionPane.showMessageDialog(null,"Registro: "+registro+"\nidcli: "+idcli+"\ntipocli: "+tipocli+"\nidvei: "+idvei+"\ntarifa: "+km+"\nKm inicial: "+kmini+"\ngps: "+gps+"\nbebe: "+bebe+"\nmotorista: "+motorista+
-				"\ndataloc: "+dataloc+"\nhoraloc: "+horaloc+"\nagenciaLoc: "+agencialoc+"\ndatadev: "+datadev+"\nhoradev: "+horadev+
-				"\nagenciadev: "+agenciadev+"\nsitloc: "+sitloc);
 		
 		String sql = "insert into locacao (codlocacao,cpf,passaporte,cnpj,codVeiculo,agenciaLoc,dataLoc,horaLoc,dataDev,agenciaDev,kmInicial,gps,bebe,motorista,tipotarifa,sitloc) values ('"+registro+"','"+cpf+"','"+pass+"','"+cnpj+"','"+idvei+"','"+agencialoc+"','"+dataloc+"','"+horaloc+"','"+datadev+"','"+agenciadev+"','"+kmini+"','"+gps+"','"+bebe+"','"+motorista+"','"+km+"','"+sitloc+"')";
 		Statement stm = connection.createStatement();
@@ -158,21 +155,27 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+
+	<script src="idiomas\Portugues\Pt.js" type="text/javascript"></script>
+    <script src="idiomas\English\Eng.js" type="text/javascript"></script>
+    <script src="idiomas\Espanol\Es.js" type="text/javascript"></script>
+    <script src="idiomas\knockout-2.0.0.js" type="text/javascript"></script>
+
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title></title>
 </head>
-<body>
+<body text="#000000" onload="<%=idi%>">
 <%
 	
 		connection.close();
 	
-		javax.swing.JOptionPane.showMessageDialog(null,"Locação efetuada com Sucesso!");
-		response.sendRedirect("Menu_Principal.jsp?user="+user+"&agencia="+agencia);
+		javax.swing.JOptionPane.showMessageDialog(null,"Message8");
+		response.sendRedirect("Menu_Principal.jsp?user="+user+"&agencia="+agencia+"&idi="+idi);
 		
 		} 
 		catch (ClassNotFoundException e) 
 		{
-			javax.swing.JOptionPane.showMessageDialog(null,"Erro no Cadastro!");
+			javax.swing.JOptionPane.showMessageDialog(null,"Message5");
 			%>
 				<script>javascript:history.back();</script>
 			<%
@@ -180,7 +183,7 @@
 		}
 		catch(SQLException e)
 		{
-			javax.swing.JOptionPane.showMessageDialog(null,"Erro no Cadastro!");
+			javax.swing.JOptionPane.showMessageDialog(null,"Message5");
 			%>
 				<script>javascript:history.back();</script>
 			<%
