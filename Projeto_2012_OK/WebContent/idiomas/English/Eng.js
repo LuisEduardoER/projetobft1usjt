@@ -59,6 +59,8 @@ function pageEng()
 	this.message6 = "Customer edited with Success!";
 	
 	this.delpf = "Excluir Pessoa Fisica";
+	this.delcli = "Deseja Excluir Esse Cliente ?";
+	this.message7 = "Cliente Excluído com Sucesso!";
 }
 
 function pageChangeEn() 

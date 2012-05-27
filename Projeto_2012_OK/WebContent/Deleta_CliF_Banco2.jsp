@@ -10,6 +10,7 @@
 <%
 	String user = request.getParameter("user");
 	String agencia = request.getParameter("agencia");
+	String idi = request.getParameter("idi");
 	String estrangeiro = request.getParameter("estrangeiro");
 	String pass = request.getParameter("pass");
 	String cpf = request.getParameter("cpf");
@@ -47,25 +48,31 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+
+	<script src="idiomas\Portugues\Pt.js" type="text/javascript"></script>
+    <script src="idiomas\English\Eng.js" type="text/javascript"></script>
+    <script src="idiomas\Espanol\Es.js" type="text/javascript"></script>
+    <script src="idiomas\knockout-2.0.0.js" type="text/javascript"></script>
+
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title></title>
 </head>
-<body>
+<body text="#000000" onload="<%=idi%>">
 <%
 	
 		connection.close();
 	
-		javax.swing.JOptionPane.showMessageDialog(null,"Cliente Excluído com Sucesso!");
-		response.sendRedirect("Menu_Principal.jsp?user="+user+"&agencia="+agencia);
+		javax.swing.JOptionPane.showMessageDialog(null,"Message7");
+		response.sendRedirect("Menu_Principal.jsp?user="+user+"&agencia="+agencia+"&idi="+idi);
 		} 
 		catch (ClassNotFoundException e) 
 		{
-			javax.swing.JOptionPane.showMessageDialog(null,"Erro de Classe!");
+			javax.swing.JOptionPane.showMessageDialog(null,"Message5");
 			e.printStackTrace();
 		}
 		catch(SQLException e)
 		{
-			javax.swing.JOptionPane.showMessageDialog(null,"Erro de SQL!");
+			javax.swing.JOptionPane.showMessageDialog(null,"Message5");
 			e.printStackTrace();
 		}
 %>
