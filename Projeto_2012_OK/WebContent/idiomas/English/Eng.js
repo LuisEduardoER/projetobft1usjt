@@ -88,7 +88,7 @@ function pageEng()
 	this.devprev = "Expected Return";
 	this.dataemp = "Date";
 	this.local = "Local";
-	this.registro = "Registration Number";
+	this.codloc = "Registration Number";
 	this.message8 = "Lease made with Success!";
 	this.message9 = "Vehicle not Found!";
 }

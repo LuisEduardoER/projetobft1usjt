@@ -129,10 +129,14 @@ function habilitaCampo(valor)
 					<OPTION SELECTED>florianopolis035
 					</SELECT></td>
 	</tr>
+	<tr>
+		<td><center><face="arial" size="12"><label data-bind="text: codloc"></label></td>
+		<td><INPUT TYPE="text" name="registro" VALUE="<%=registro%>" disabled></td>
+	</tr>
 	</table>
 	
 	<br></center>
-	<face="arial" size="12"><label data-bind="text: registro"></label></> <INPUT TYPE="text" NAME="registro" VALUE="<%=registro %>">
+	
 	<INPUT TYPE="submit" class="campo" nome="ok" id="ok" VALUE= "OK" data-bind="text: Enviar" disabled>
 	<input type='button' onclick='javascript:history.back()' value='Voltar' name='Voltar' data-bind="text: voltar">
 	

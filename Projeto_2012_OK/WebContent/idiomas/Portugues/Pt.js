@@ -88,7 +88,7 @@ function pagePt()
 	this.devprev = "Devolucao Prevista";
 	this.dataemp = "Data";
 	this.local = "Local";
-	this.registro = "Numero de Registro";
+	this.codloc = "Numero de Registro";
 	this.message8 = "Locacao efetuada com Sucesso!";
 	this.message9 = "Veiculo nao Encontrado!";
 	
