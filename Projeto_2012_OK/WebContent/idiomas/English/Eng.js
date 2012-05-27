@@ -49,15 +49,14 @@ function pageEng()
 	this.valcnh = "Validity";
 	this.limpar = "Clear";
 	this.voltar = "Back";
-	this.consultapf = "Consult Physical Person Customer";
+	this.consultapf = "Consult Physical Person";
 	this.brasileiro = "Brasilian";
 	this.message3 = "Customer not Found!!";
 	this.dadosbasicos = "Basic Data";
 	this.message4 = "Customer registered with Success!";
 	this.message5 = "Error";
-	
-	this.editapf = "Editar Pessoa Fisica";
-	this.message6 = "Cliente Alterado com Sucesso!";
+	this.editapf = "Edit Physical Person";
+	this.message6 = "Customer edited with Success!";
 	
 }
 
