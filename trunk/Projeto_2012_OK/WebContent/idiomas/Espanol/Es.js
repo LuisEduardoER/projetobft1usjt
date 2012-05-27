@@ -88,7 +88,7 @@ function pageEs()
 	this.devprev = "Retorno Esperado";
 	this.dataemp = "Fecha";
 	this.local = "Local";
-	this.registro = "Matricula";
+	this.codloc = "Matricula";
 	this.message8 = "Ubicacion realizado con exito!";
 	this.message9 = "No se encontro al Vehiculo!";
 }

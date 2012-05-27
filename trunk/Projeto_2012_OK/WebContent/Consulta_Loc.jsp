@@ -10,7 +10,7 @@
 	String user = request.getParameter("user");
 	String agencia = request.getParameter("agencia");
 	String idi = request.getParameter("idi");
-	String registro = ""+request.getParameter("codloc");
+	String codloc= ""+request.getParameter("codloc");
 	
 	String cpf = request.getParameter("cpf");
 	String pass = request.getParameter("pass");
@@ -206,11 +206,12 @@
 					<OPTION Selected> <%=agenciadev%>
 					</SELECT></td>
 	</tr>
+	<tr>
+		<td><center><face="arial" size="12"><label data-bind="text: codloc"></label></td>
+		<td><INPUT TYPE="text" name="registro" VALUE="<%=codloc%>" disabled></td>
+	</tr>
 	</table>
-	
 	<br>
-	<face="arial" size="12"><center><label data-bind="text: registro"></label><p><INPUT TYPE="text" name="registro" VALUE="<%=registro%>" disabled>
-	
 	<INPUT TYPE="submit" class="campo" nome="ok" id="ok" VALUE= "OK" data-bind="text: Enviar">
 	<input type='button' onclick='javascript:history.back()' value='Voltar' name='Voltar' data-bind="text: voltar">
 	
