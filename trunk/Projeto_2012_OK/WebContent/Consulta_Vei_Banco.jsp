@@ -10,6 +10,7 @@
 <%
 
 	String user = request.getParameter("user");
+	String idi = request.getParameter("idi");
 	String agencia = request.getParameter("agencia");
 	String consulta = request.getParameter("consulta");
 	String chassi1 = request.getParameter("chassi");
@@ -64,10 +65,16 @@ try{
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+
+	<script src="idiomas\Portugues\Pt.js" type="text/javascript"></script>
+    <script src="idiomas\English\Eng.js" type="text/javascript"></script>
+    <script src="idiomas\Espanol\Es.js" type="text/javascript"></script>
+    <script src="idiomas\knockout-2.0.0.js" type="text/javascript"></script>
+
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title></title>
 </head>
-<body>
+<body text="#000000" onload="<%=idi%>">
 
 <%
 
@@ -90,13 +97,13 @@ if(rs.next())
 	
 	response.sendRedirect("Consulta_Vei.jsp?user="+user+"&agencia="+agencia+"&codigo="+codigo+"&chassi="+chassi+"&placa="+placa+"&modelo="+modelo+
 			"&km="+km+"&grupo="+grupo+"&fabricante="+fabricante+"&estado="+estado+"&cidade="+cidade+"&cor="+cor+"&kmcontrolado="+kmcontrolado+
-			"&kmlivre="+kmlivre+"&diaria="+diaria+"&situacao="+situacao);
+			"&kmlivre="+kmlivre+"&diaria="+diaria+"&situacao="+situacao+"&idi="+idi);
 	
 }
 else
 {
-	javax.swing.JOptionPane.showMessageDialog(null,"Veículo não Encontrado!!");
-	response.sendRedirect("Consulta_Veiculo.jsp?user="+user+"&agencia="+agencia);
+	javax.swing.JOptionPane.showMessageDialog(null,"Message9");
+	response.sendRedirect("Consulta_Veiculo.jsp?user="+user+"&agencia="+agencia+"&idi="+idi);
 }
 
 connection.close();
@@ -110,7 +117,7 @@ catch (ClassNotFoundException e)
 }
 catch(SQLException e)
 {
-	javax.swing.JOptionPane.showMessageDialog(null,"Veículo não Encontrado!!");
+	javax.swing.JOptionPane.showMessageDialog(null,"Message5");
 	%>
 		<script>javascript:history.back();</script>
 	<%
