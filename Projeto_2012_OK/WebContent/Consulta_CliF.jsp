@@ -136,80 +136,83 @@ else
 <form name="form1" id="form1" action = "Menu_Principal.jsp?user=<%= user%>&agencia=<%=agencia%>" method = "post">	
 
 
-	<h1><P align="center">Consulta de Pessoa Física</h1></P>
-	<face="arial" size="20"><center>Dados Básicos</center><P>
+	<h1><P align="center"><label data-bind="text: consultapf"></label></h1></P>
+	<face="arial" size="20"><center><label data-bind="text: dadosbasicos"></label></center><P>
 	<center><table border = "0">
 	<tr>
-		<td COLSPAN = 2 ><face="arial" size="12"><center>Nome</><br><INPUT TYPE="text" name="nome" size="40" VALUE="<%= nome%>" disabled></center></td>
-		<td COLSPAN = 2><face="arial" size="12"><center>Telefone</><br><INPUT TYPE="text" name="fone" maxlength="11" VALUE="<%= fone%>" disabled></center></td>
-		<td COLSPAN = 2><face="arial" size="12"><center>E-mail</><br><INPUT TYPE="text" name="email" size="40" VALUE="<%= email%>" disabled></center></td>
+		<td COLSPAN = 2 ><face="arial" size="12"><center><label data-bind="text: nome"></label></><br><INPUT TYPE="text" name="nome" size="40" VALUE="<%= nome%>" disabled></center></td>
+		<td COLSPAN = 2><face="arial" size="12"><center><label data-bind="text: telefone"></label></><br><INPUT TYPE="text" name="fone" maxlength="11" VALUE="<%= fone%>" disabled></center></td>
+		<td COLSPAN = 2><face="arial" size="12"><center><label data-bind="text: email"></label></><br><INPUT TYPE="text" name="email" size="40" VALUE="<%= email%>" disabled></center></td>
 	</tr>
 	<tr>
-		<td class="texto" COLSPAN = 2 ><face="arial" size="12"><center>Sexo</><br>
+		<td class="texto" COLSPAN = 2 ><face="arial" size="12"><center><label data-bind="text: sexo"></label></><br>
 		<%if(sexo.equals("Masculino"))
 			{
 			%>
-			<input type="radio" name="sexo" value="Masculino" checked disabled>Masculino</>
-			<input type="radio" name="sexo" value="Feminino" disabled>Feminino</>
+			<input type="radio" name="sexo" value="Masculino" checked disabled><label data-bind="text: masculino"></label></>
+			<input type="radio" name="sexo" value="Feminino" disabled><label data-bind="text: feminino"></label></>
 			<%}
 			  else
 			  {
 			   %>
-			  	<input type="radio" name="sexo" value="Masculino" disabled>Masculino</>
-				<input type="radio" name="sexo" value="Feminino" checked disabled>Feminino</>
+			  	<input type="radio" name="sexo" value="Masculino" disabled><label data-bind="text: masculino"></label></>
+				<input type="radio" name="sexo" value="Feminino" checked disabled><label data-bind="text: feminino"></label></>
 			<%} %>
 		</td>
 		<td></td>
-		<td COLSPAN = 2 ><face="arial" size="12"><center>Data de Nascimento</><br>
+		<td COLSPAN = 2 ><face="arial" size="12"><center><label data-bind="text: datnasc"></label></><br>
 			<INPUT TYPE="text" name="datanasc" maxlength="10" VALUE="<%= nasc%>" disabled></center>
 		</td>
 	</tr>
 	<tr>
 		<td></td>
-		<td class="texto" COLSPAN = 2 ><face="arial" size="12"><br><center>Estrangeiro</><br>
+		<td class="texto" COLSPAN = 2 ><face="arial" size="12"><br><center><label data-bind="text: estrangeiro"></label></><br>
 			<%if(consulta.equals("Sim"))
 				{
 				%>
-				<input type="radio" name="estrangeiro" id="estraS" value="Sim" checked disabled>Sim</>
-				<input type="radio" name="estrangeiro" id="estraN" value="Não" disabled>Não</>
+				<input type="radio" name="estrangeiro" id="estraS" value="Sim" checked disabled><label data-bind="text: sim"></label></>
+				<input type="radio" name="estrangeiro" id="estraN" value="Não" disabled><label data-bind="text: nao"></label></>
 			<%}
 			  else
 			  {
 			  %>
-				<input type="radio" name="estrangeiro" id="estraS" value="Sim" disabled>Sim</>
-				<input type="radio" name="estrangeiro" id="estraN" value="Não" checked disabled>Não</>
+				<input type="radio" name="estrangeiro" id="estraS" value="Sim" disabled><label data-bind="text: sim"></label></>
+				<input type="radio" name="estrangeiro" id="estraN" value="Não" checked disabled><label data-bind="text: nao"></label></>
 			<%} %>
+		</td>
+		<td><face size="12"><br><center><label data-bind="text: loc"></label></><br>
+			<INPUT TYPE="text" name="loc" VALUE="<%= loc%>" disabled></center>
 		</td>
 	</tr>
 	</table>
 	<br><br>
-	<face="arial" size="20"><center>Documentos</center><P>
+	<face="arial" size="20"><center><label data-bind="text: doc"></label></center><P>
 	<center></center><table border = "0">
 	<tr>
-		<td><face="arial" size="12"><center>CPF</><br><INPUT class="campo" TYPE="text" name="cpf" id="cpf" maxlength="16" VALUE="<%= cpf%>" disabled></center></td>
-		<td><face="arial" size="12"><center>Passaporte</><br><INPUT class="campo" TYPE="text" name="pass" id="pass" maxlength="20" disabled></center></td>
+		<td><face="arial" size="12"><center><label data-bind="text: cpf"></label></><br><INPUT class="campo" TYPE="text" name="cpf" id="cpf" maxlength="16" VALUE="<%= cpf%>" disabled></center></td>
+		<td><face="arial" size="12"><center><label data-bind="text: pass"></label></><br><INPUT class="campo" TYPE="text" name="pass" id="pass" maxlength="20" disabled></center></td>
 		<td></td>
 		<td></td>
 		<td></td>
-		<td><face="arial" size="12"><center>CNH</><br><INPUT TYPE="text" name="cnh" id="cnh" maxlength="11" VALUE="<%= cnh%>" disabled></center></td>
-		<td><face="arial" size="12"><center>Categoria CNH</><br><INPUT TYPE="text" name="catcnh" maxlength="2" VALUE="<%= catcnh%>" disabled></center></td>
-		<td><face="arial" size="12"><center>Estado Emissor</><br><INPUT TYPE="text" name="estemcnh" maxlength="15" VALUE="<%= estadocnh%>" disabled></center></td>
+		<td><face="arial" size="12"><center><label data-bind="text: cnh"></label></><br><INPUT TYPE="text" name="cnh" id="cnh" maxlength="11" VALUE="<%= cnh%>" disabled></center></td>
+		<td><face="arial" size="12"><center><label data-bind="text: catcnh"></label></><br><INPUT TYPE="text" name="catcnh" maxlength="2" VALUE="<%= catcnh%>" disabled></center></td>
+		<td><face="arial" size="12"><center><label data-bind="text: estadocnh"></label></><br><INPUT TYPE="text" name="estemcnh" maxlength="15" VALUE="<%= estadocnh%>" disabled></center></td>
 	</tr>
 	<tr>
-		<td><face="arial" size="12"><center>RG</><br><INPUT class="campo" TYPE="text" name="rg" id="rg" maxlength="12" VALUE="<%= rg%>" disabled></center></td>
+		<td><face="arial" size="12"><center><label data-bind="text: rg"></label></><br><INPUT class="campo" TYPE="text" name="rg" id="rg" maxlength="12" VALUE="<%= rg%>" disabled></center></td>
 		<td></td>
 		<td></td>
 		<td></td>
 		<td></td>
 		<td></td>
-		<td><face="arial" size="12"><center>Data de Emissão</><br><INPUT TYPE="text" name="dataemcnh" id="dataemcnh" maxlength="10" VALUE="<%= datacnh%>" disabled></center></td>
-		<td><face="arial" size="12"><center>Data de Validade</><br><INPUT TYPE="text" name="datavalcnh" id="datavalcnh" maxlength="10" VALUE="<%= valcnh%>" disabled></center></td>
+		<td><face="arial" size="12"><center><label data-bind="text: emiscnh"></label></><br><INPUT TYPE="text" name="dataemcnh" id="dataemcnh" maxlength="10" VALUE="<%= datacnh%>" disabled></center></td>
+		<td><face="arial" size="12"><center><label data-bind="text: valcnh"></label></><br><INPUT TYPE="text" name="datavalcnh" id="datavalcnh" maxlength="10" VALUE="<%= valcnh%>" disabled></center></td>
 	</tr>
 	</table>
 	
 	<br>
-	<center>	<INPUT type="submit" value= "OK">
-				<input type='button' onclick='javascript:history.back()' value='Voltar' name='Voltar'></center>
+	<center>	<INPUT type="submit" value= "OK" data-bind="text: Enviar">
+				<input type='button' onclick='javascript:history.back()' value='Voltar' name='Voltar' data-bind="text: voltar"></center>
 </form>
 <%} %>
 </body>

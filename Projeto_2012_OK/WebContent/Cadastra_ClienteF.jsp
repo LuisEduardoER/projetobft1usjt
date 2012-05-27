@@ -110,9 +110,9 @@ function foneMask(local,string)
 	</table>
 	
 	<br>
-	<center>	<INPUT type="submit" value="ok "data-bind="text: Enviar">
+	<center>	<INPUT type="submit" value="ok" data-bind="text: Enviar">
 				<INPUT type="reset" value= "Limpar" data-bind="text: limpar">
-				<input type='button' onclick='javascript:history.back()' value='Voltar' name='Voltar' label data-bind="text: voltar"></center>
+				<input type='button' onclick='javascript:history.back()' value='Voltar' name='Voltar' data-bind="text: voltar"></center>
 </form>
 
 </body>
