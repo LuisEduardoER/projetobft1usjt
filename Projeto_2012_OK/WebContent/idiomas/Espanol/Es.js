@@ -79,8 +79,8 @@ function pageEs()
 	this.bebe = "Silla de Bebe";
 	this.motorista = "Conductor";
 	this.tarifa = "Tipo de Tarifa";
-	this.livre = "Km Libre";
-	this.controlado = "Km Controlado";
+	this.livre = "KM Libre";
+	this.controlado = "KM Controlado";
 	this.dadoscomp = "Datos Adicionales";
 	this.dataemp = "Fecha del Prestamo";
 	this.horaemp = "Tiempo de Prestamo";
@@ -91,35 +91,21 @@ function pageEs()
 	this.codloc = "Matricula";
 	this.message8 = "Ubicacion realizado con exito!";
 	this.message9 = "No se encontro al Vehiculo!";
-	
-	this.message10 = "Valor Invalido!";
-	this.cadastravei = "Cadastro de Veiculo";
+	this.message10 = "Valor no Valido!";
+	this.cadastravei = "Registro de Vehiculo";
 	this.fabricante = "Fabricante";
 	this.modelo = "Modelo";
-	this.chassi = "Chassi";
+	this.chassi = "Chasis";
 	this.placa = "Placa";
-	this.km = "Km";
+	this.km = "KM";
 	this.grupo = "Grupo";
-	this.a = "A-Economico";
-  	this.c = "C-Economico com Ar";
-  	this.f = "F-Intermediario";
-  	this.g = "G-Intermediario Wagon Especial";
-  	this.h = "H-Executivo";
-  	this.i = "I-Utilitario";
-  	this.k = "K-Executivo Luxo";
-  	this.m = "M-Intermediario Wagon";
-  	this.n = "N-Pick-up";
-  	this.p = "P-4X4 Especial";
-  	this.r = "R-Minivan";
-  	this.u = "U-Furgao";
-  	this.y = "Y-Blindado";
   	this.estado = "Estado";
-  	this.cidade = "Cidade";
-  	this.cor = "Cor";
+  	this.cidade = "Ciudad";
+  	this.cor = "Color";
   	this.valores = "Valores";
-  	this.kmlivre = "Km Livre R$";
-  	this.kmcontrolado = "Km Controlado R$";
-  	this.diaria = "Diaria";
+  	this.kmlivre = "KM Libre R$";
+  	this.kmcontrolado = "KM Controlado R$";
+  	this.diaria = "Diario";
 }
 
 function pageChangeEs() 
