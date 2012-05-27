@@ -31,28 +31,51 @@ try{
 	
 	if(consulta.equals("locacao"))
 	{
-		sql = "select * from locacao where codlocacao = '"+loc+"'";
+		if(loc != "")
+		{
+			sql = "select * from locacao where codlocacao = '"+loc+"'";	
+		}
+		else
+		{
+			javax.swing.JOptionPane.showMessageDialog(null,"message10");
+			response.sendRedirect("Consulta_Locacao.jsp?user="+user+"&agencia="+agencia+"&idi="+idi);
+		}
 	}
 	else if(consulta.equals("cliente"))
 	{
-		if(tipocli.equals("PF"))
+		if(cli != "")
 		{
-			sql = "select * from locacao where cpf ILIKE '"+cli+"'";
+			if(tipocli.equals("PF"))
+			{
+				sql = "select * from locacao where cpf ILIKE '"+cli+"'";
+			}
+			else if(tipocli.equals("PJ"))
+			{
+				sql = "select * from locacao where cnpj ILIKE '"+cli+"'";
+			}
+			else if(tipocli.equals("PE"))
+			{
+				sql = "select * from locacao where passaporte ILIKE '"+cli+"'";
+			}
 		}
-		else if(tipocli.equals("PJ"))
+		else
 		{
-			sql = "select * from locacao where cnpj ILIKE '"+cli+"'";
-		}
-		else if(tipocli.equals("PE"))
-		{
-			sql = "select * from locacao where passaporte ILIKE '"+cli+"'";
+			javax.swing.JOptionPane.showMessageDialog(null,"message10");
+			response.sendRedirect("Consulta_Locacao.jsp?user="+user+"&agencia="+agencia+"&idi="+idi);
 		}
 	}
 	else if(consulta.equals("veiculo"))
 	{
-		sql = "select * from locacao where codveiculo '"+vei+"'";
+		if(vei != "")
+		{
+			sql = "select * from locacao where codveiculo = '"+vei+"'";
+		}
+		else
+		{
+			javax.swing.JOptionPane.showMessageDialog(null,"message10");
+			response.sendRedirect("Consulta_Locacao.jsp?user="+user+"&agencia="+agencia+"&idi="+idi);
+		}
 	}
-	//sql = "select * from locacao where codlocacao = '"+loc+"'";
 	Statement stm = connection.createStatement();
 	ResultSet rs1 = stm.executeQuery(sql);
 %>
@@ -100,7 +123,7 @@ if(rs1.next())
 else
 {
 	javax.swing.JOptionPane.showMessageDialog(null,"message3");
-	response.sendRedirect("Consulta_ClienteF.jsp?user="+user+"&agencia="+agencia+"&idi="+idi);
+	response.sendRedirect("Consulta_Locacao.jsp?user="+user+"&agencia="+agencia+"&idi="+idi);
 }
 
 connection.close();
