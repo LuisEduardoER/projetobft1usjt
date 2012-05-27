@@ -65,18 +65,18 @@
 	<tr>
 		<td><face="arial" size="12"><center><label data-bind="text: cnh"></label></><br><INPUT TYPE="text" name="cnh" id="cnh" maxlength="11" value=<%= cnh%> disabled></center></td>
 		<td><face="arial" size="12"><center><label data-bind="text: catcnh"></label></><br><INPUT TYPE="text" name="catcnh" maxlength="2" VALUE=<%= catcnh%> disabled></center></td>
-		<td><face="arial" size="12"><center>Estado Emissor</><br><INPUT TYPE="text" name="estemcnh" maxlength="15" VALUE="<%= estadocnh%>" disabled></center></td>
+		<td><face="arial" size="12"><center><label data-bind="text: estadocnh"></label></><br><INPUT TYPE="text" name="estemcnh" maxlength="15" VALUE="<%= estadocnh%>" disabled></center></td>
 	</tr>
 	<tr>
-		<td><face="arial" size="12"><center>Data de Emissão</><br><INPUT TYPE="text" name="dataemcnh" id="dataemcnh" maxlength="10" value=<%= emiscnh%> disabled></center></td>
-		<td><face="arial" size="12"><center>Data de Validade</><br><INPUT TYPE="text" name="datavalcnh" id="datavalcnh" maxlength="10" value=<%= valcnh%> disabled></center></td>
+		<td><face="arial" size="12"><center><label data-bind="text: emiscnh"></label></><br><INPUT TYPE="text" name="dataemcnh" id="dataemcnh" maxlength="10" value=<%= emiscnh%> disabled></center></td>
+		<td><face="arial" size="12"><center><label data-bind="text: valcnh"></label></><br><INPUT TYPE="text" name="datavalcnh" id="datavalcnh" maxlength="10" value=<%= valcnh%> disabled></center></td>
 	</tr>
 	</table>
 	
 	<br>
-	<center>	<face="arial" size="12"><center>Deseja Excluir Esse Cliente ?</><BR><BR>
-				<INPUT type="submit" value= "Sim">
-				<input type='button' onclick='javascript:history.back()' value='Voltar' name='Voltar'></center>
+	<center>	<face="arial" size="12"><center><label data-bind="text: delcli"></label></><BR><BR>
+				<INPUT type="submit" value= "Sim" data-bind="text: sim">
+				<input type='button' onclick='javascript:history.back()' value='Voltar' name='Voltar' data-bind="text: voltar"></center>
 </form>
 
 </body>
