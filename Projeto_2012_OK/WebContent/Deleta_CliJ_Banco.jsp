@@ -74,7 +74,7 @@ if(rs1.next())
 else
 {
 	javax.swing.JOptionPane.showMessageDialog(null,"Message3");
-	response.sendRedirect("Consulta_ClienteJ.jsp?user="+user+"&agencia="+agencia+"&idi="+idi);
+	response.sendRedirect("Deleta_ClienteJ.jsp?user="+user+"&agencia="+agencia+"&idi="+idi);
 }
 
 if(rs2.next())
