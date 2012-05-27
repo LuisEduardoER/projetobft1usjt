@@ -109,6 +109,9 @@ function pagePt()
   	this.message11 = "Veículo cadastrado com Sucesso!";
   	this.editapj = "Editar Pessoa Juridica";
   	this.delpj = "Excluir Pessoa Juridica";
+  	
+  	this.consultavei = "Consulta de Veiculo";
+  	this.sit = "Situacao";  
 }
 
 function pageChangePt() 
