@@ -62,7 +62,7 @@ function pageEs()
 	this.message7 = "Cliente borrado con Exito!";
 	this.cadastropj = "Registro de Persona Juridica";
 	this.nomefant = "Nombre fantasia";
-	this.razao = "Razón social";
+	this.razao = "Razon social";
 	this.cnpj = "CNPJ";
 	this.inscri = "Registro de Estado";
 	this.consultapj = "Consulta al Cliente Persona Juridica";
