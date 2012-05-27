@@ -58,6 +58,8 @@ function pagePt()
 	this.editapf = "Editar Pessoa Fisica";
 	this.message6 = "Cliente Alterado com Sucesso!";
 	
+	this.delpf = "Excluir Pessoa Fisica";
+	
 }
 
 function pageChangePt() 
