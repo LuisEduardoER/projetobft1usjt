@@ -11,6 +11,7 @@
 
 	String user = request.getParameter("user");
 	String agencia = request.getParameter("agencia");
+	String idi = request.getParameter("idi");
 	String cnpj1 = request.getParameter("cnpj");
 	String cpf = "";
 	String fone = "";
@@ -26,6 +27,7 @@
 	String razao = "";
 	String inscri = "";
 	String cnpj = "";
+	String loc = "";
 	
 try{
 	
@@ -51,10 +53,16 @@ try{
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+
+	<script src="idiomas\Portugues\Pt.js" type="text/javascript"></script>
+    <script src="idiomas\English\Eng.js" type="text/javascript"></script>
+    <script src="idiomas\Espanol\Es.js" type="text/javascript"></script>
+    <script src="idiomas\knockout-2.0.0.js" type="text/javascript"></script>
+
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title></title>
 </head>
-<body>
+<body text="#000000" onload="<%=idi%>">
 
 <%
 
@@ -66,8 +74,8 @@ if(rs1.next())
 }
 else
 {
-	javax.swing.JOptionPane.showMessageDialog(null,"Cliente não Encontrado!!");
-	response.sendRedirect("Consulta_ClienteJ.jsp?user="+user+"&agencia="+agencia);
+	javax.swing.JOptionPane.showMessageDialog(null,"Message3");
+	response.sendRedirect("Consulta_ClienteJ.jsp?user="+user+"&agencia="+agencia+"&idi="+idi);
 }
 
 if(rs2.next())
@@ -87,10 +95,11 @@ if(rs3.next())
 	nome = rs3.getString("nomefant");
 	razao = rs3.getString("razaosoci");
 	inscri = rs3.getString("inscriest");	
+	loc = rs3.getString("loc");
 	
 	response.sendRedirect("Consulta_CliJ.jsp?user="+user+"&agencia="+agencia+"&nome="+nome+"&cpf="+cpf+"&rg="+rg+
 			"&fone="+fone+"&email="+email+"&cnh="+cnh+"&catcnh="+catcnh+"&estemcnh="+estadocnh+"&dataemcnh="+datacnh+
-			"&datavalcnh="+valcnh+"&cnpj="+cnpj+"&nomec="+nomecond+"&razao="+razao+"&inscri="+inscri);
+			"&datavalcnh="+valcnh+"&cnpj="+cnpj+"&nomec="+nomecond+"&razao="+razao+"&inscri="+inscri+"&loc="+loc+"&idi="+idi);
 }
 
 connection.close();
@@ -98,12 +107,12 @@ connection.close();
 } 
 catch (ClassNotFoundException e) 
 {
-	javax.swing.JOptionPane.showMessageDialog(null,"ERRO DE CLASSE!!");
+	javax.swing.JOptionPane.showMessageDialog(null,"Message5");
 	e.printStackTrace();
 }
 catch(SQLException e)
 {
-	javax.swing.JOptionPane.showMessageDialog(null,"ERRO DE SQL");
+	javax.swing.JOptionPane.showMessageDialog(null,"Message5");
 	e.printStackTrace();
 }
 
