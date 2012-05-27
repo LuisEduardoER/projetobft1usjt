@@ -67,6 +67,8 @@ function pagePt()
 	this.inscri = "Inscricao Estadual";
 	this.consultapj = "Consulta Cliente Pessoa Juridica";
 	this.condutor = "Condutor";
+	this.consultaloc = "Consultar Locacao";
+	this.codigo = "Codigo";
 }
 
 function pageChangePt() 

@@ -67,6 +67,8 @@ function pageEng()
 	this.inscri = "State Registration";
 	this.consultapj = "Consult Juridical Person";
 	this.condutor = "Conductor";
+	this.consultaloc = "Consult Lease";
+	this.codigo = "Code";
 }
 
 function pageChangeEn() 

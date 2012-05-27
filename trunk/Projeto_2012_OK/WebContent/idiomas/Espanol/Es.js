@@ -67,6 +67,8 @@ function pageEs()
 	this.inscri = "Registro de Estado";
 	this.consultapj = "Consulta al Cliente Persona Juridica";
 	this.condutor = "Conductor";
+	this.consultaloc = "Consultar Ubicacion";
+	this.codigo = "Codigo";
 }
 
 function pageChangeEs() 
