@@ -111,6 +111,9 @@ function pageEng()
   	this.delpj = "Delete Juridical Person";
   	this.consultavei = "Consult Vehicle";
   	this.sit = "Situation";  
+  	
+  	this.editavei = "Editar Veiculo";
+  	this.delvei = "Excluir Veiculo";
 }
 
 function pageChangeEn() 

@@ -111,6 +111,9 @@ function pageEs()
   	this.delpj = "Borrar Persona Juridica";
   	this.consultavei = "Consulta del Vehiculo";
   	this.sit = "Situacion";  
+  	
+  	this.editavei = "Editar Veiculo";
+  	this.delvei = "Excluir Veiculo";
 }
 
 function pageChangeEs() 

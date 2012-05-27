@@ -111,6 +111,9 @@ function pagePt()
   	this.delpj = "Excluir Pessoa Juridica";  	
   	this.consultavei = "Consulta de Veiculo";
   	this.sit = "Situacao";  
+  	
+  	this.editavei = "Editar Veiculo";
+  	this.delvei = "Excluir Veiculo";
 }
 
 function pageChangePt() 
