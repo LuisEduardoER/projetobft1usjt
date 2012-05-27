@@ -114,6 +114,8 @@ function pageEng()
   	
   	this.editavei = "Editar Veiculo";
   	this.delvei = "Excluir Veiculo";
+  	this.message12 = "Veiculo Alterado com Sucesso";
+  	this.message13 = "Veiculo Excluido com Sucesso";
 }
 
 function pageChangeEn() 
