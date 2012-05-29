@@ -116,6 +116,8 @@ function pageEs()
   	this.message12 = "Vehiculo Modificado con Exito";
   	this.message13 = "Vehiculo Eliminado con Exito";  	
   	this.delvei2 = "Quieres eliminar este vehiculo?";
+  	
+  	this.finalizaloc = "Finalizar Locacao";
 }
 
 function pageChangeEs() 

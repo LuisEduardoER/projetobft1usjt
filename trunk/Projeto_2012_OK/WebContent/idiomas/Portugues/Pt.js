@@ -116,6 +116,8 @@ function pagePt()
   	this.message12 = "Veiculo Alterado com Sucesso";
   	this.message13 = "Veiculo Excluido com Sucesso";  	
   	this.delvei2 = "Deseja Excluir Esse Veiculo ?";
+  	
+  	this.finalizaloc = "Finalizar Locacao";
 }
 
 function pageChangePt() 
