@@ -116,6 +116,8 @@ function pageEng()
   	this.message12 = "Vehicle Modified with Success";
   	this.message13 = "Vehicle Deleted with Success";  	
   	this.delvei2 = "Do you want to delete this vehicle?";
+  	
+  	this.finalizaloc = "Finalizar Locacao";
 }
 
 function pageChangeEn() 

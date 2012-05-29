@@ -134,13 +134,13 @@
         	if(motorista.equals("sim"))
         	{
         	%>
-				<INPUT TYPE="checkbox" NAME="motorista" checked disbled><label data-bind="text: motorista"></label></>
+				<INPUT TYPE="checkbox" NAME="motorista" checked disabled><label data-bind="text: motorista"></label></>
 			<%
         	}
 			else
 			{
 			%>
-				<INPUT TYPE="checkbox" NAME="motorista" disbled><label data-bind="text: motorista"></label></>
+				<INPUT TYPE="checkbox" NAME="motorista" disabled><label data-bind="text: motorista"></label></>
 			<%
 			}
 			%>
